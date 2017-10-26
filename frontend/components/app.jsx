@@ -11,7 +11,7 @@ import {
 import NavbarHomeContainer from './navbar/navbar_home_container';
 import Homepage from './homepage/homepage';
 import loggedIn from './blank/loggedIn';
-import ListingIndexContainer from './listing_index/listing_index_container';
+import ListingPageContainer from './listing_page/listing_page_container';
 
 const App = () => (
   <div className="app-component">
@@ -21,7 +21,7 @@ const App = () => (
     <Switch>
       <Route exact path="/" component={Homepage} />
       <Route path="/loggedIn" component={loggedIn} />
-      <Route path="/listings" component={ListingIndexContainer} />
+      <Route path="/listings" component={ListingPageContainer} />
     </Switch>
   </div>
 );
