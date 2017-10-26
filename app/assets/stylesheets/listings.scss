@@ -1,21 +1,18 @@
-.listing-page {
+.listing-div {
   width: 100%;
   padding: 20px;
-  display: flex;
-}
-
-.map-index {
-  height: 100%;
-  width: 40%;
+  position: relative;
 }
 
 .map {
-  height: 600px;
-  width: 100%;
+  float: right;
+  height: 500px;
+  width: 40%;
 }
 
 .listing-index {
-  width: 60%;
+  float: left;
+  width: 50%;
 }
 
 .listing-index ul {

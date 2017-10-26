@@ -3,11 +3,11 @@ import * as ListingAPIUtil from '../util/listing_api_util';
 export const RECEIVE_LISTINGS = 'RECEIVE_LISTINGS';
 export const RECEIVE_LISTING = 'RECEIVE_LISTING';
 
-export const receiveListings = listings => ({
+const receiveListings = listings => ({
   type: RECEIVE_LISTINGS,
   listings
 });
-export const receiveListing = listing => ({
+const receiveListing = listing => ({
   type: RECEIVE_LISTING,
   listing
 });

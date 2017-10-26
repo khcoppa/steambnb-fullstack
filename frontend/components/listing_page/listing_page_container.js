@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
 import { fetchListings, fetchListing } from '../../actions/listing_actions';
-import ListingPage from './listing_index';
+import ListingPage from './listing_page';
 
 const mapStateToProps = state => ({
   listings: Object.keys(state.entities.listings).map(id => state.entities.listings[id])

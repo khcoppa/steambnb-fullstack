@@ -5,15 +5,11 @@ import ListingMap from './../listing_map/listing_map';
 
 const ListingPage = (props) => (
   <div className="listings-div">
-    <div className="left-listings">
-      <ListingIndex
-        listings={props.listings}
-        fetchListings={props.fetchListings}
-      />
-    </div>
-    <div className="right-map">
-      <ListingMap listings={props.listings} />
-    </div>
+    <ListingIndex
+      listings={props.listings}
+      fetchListings={props.fetchListings}
+    />
+    <ListingMap listings={props.listings} />
   </div>
 );
 
