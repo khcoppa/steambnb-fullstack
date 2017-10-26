@@ -1,0 +1,53 @@
+.form-container {
+  border-top: 1px solid #d9d9d9;
+  border-bottom: 1px solid #d9d9d9;
+  margin: 5%;
+  width: auto;
+  height: 75%;
+}
+
+.form-container input {
+  display: inline;
+  margin: 0 auto;
+  width: 93%;
+  height: 40px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 100;
+  font-size: 16px;
+  border: none;
+  padding-left: 8px;
+  padding-right: 0;
+}
+
+.username-input {
+  border: 1px solid #d9d9d9;
+  font-size: 16px;
+  margin-top: 30%;
+}
+
+.password-input {
+  border: 1px solid #d9d9d9;
+  font-size: 16px;
+}
+
+.password-input input {
+  border: none;
+}
+
+
+
+#submit-button {
+  background-color: #ff6666;
+  color: white;
+  display: block;
+  margin: 0 auto;
+  width: 97%;
+  height: 40px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 100;
+  font-size: 14px;
+  font-weight: 500;
+  border: none;
+  border-radius: 3px;
+  letter-spacing: 1px;
+}

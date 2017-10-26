@@ -1,0 +1,43 @@
+.navbar-home {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+
+.astext {
+  font-size: 13px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  letter-spacing: 1px;
+  background: none;
+  border: none;
+  color: #505050;
+}
+
+.right-nav ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+.right-nav ul li {
+  margin-right: 10px;
+}
+.right-nav button {
+  border-bottom: 2px solid white;
+}
+
+.right-nav button:hover {
+  border-color: #505050;
+  cursor: pointer;
+}
+
+.logo-div {
+  align-items: center;
+  display: flex;
+  padding-left: 20px;
+}
+#logo {
+  color: #ff6666;
+  font-size: 32px;
+}
