@@ -3,7 +3,6 @@ import ListingIndexItem from './listing_index_item';
 
 class ListingIndex extends React.Component {
   componentDidMount() {
-    debugger
     this.props.fetchListings();
   }
   render () {
@@ -18,7 +17,7 @@ class ListingIndex extends React.Component {
           }
         </ul>
       </div>
-    )
+    );
   }
 }
 

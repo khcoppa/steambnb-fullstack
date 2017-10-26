@@ -1,5 +1,5 @@
 class Api::ListingsController < ApplicationController
-  before_action :require_login, only: [:create]
+  # before_action :require_login, only: [:create]
 
   def index
     @listings = Listing.all
