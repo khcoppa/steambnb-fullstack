@@ -7,6 +7,7 @@ class Homepage extends React.Component {
       <div className="home-content">
         <h1>Steambnb</h1>
         <p>Book experiences at the worlds best saunas and hotsprings.</p>
+        <Link to={`/listings`}>Check out Listings</Link>
       </div>
     );
   }

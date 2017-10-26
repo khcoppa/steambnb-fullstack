@@ -9,7 +9,6 @@ export default class MarkerManager {
   }
 
   updateMarkers(listings) {
-    debugger
     listings
       .filter(listing => !this.markers[listing.id])
       .forEach(listing => this.createMarkerFromListing(listing));
@@ -19,7 +18,6 @@ export default class MarkerManager {
     const address = listing.location;
     this.geocoder.geocode({ 'address': address }, (results, status) => {
       if (status == 'OK') {
-        debugger
         const marker = new google.maps.Marker({
           position: results[0].geometry.location,
           map: this.map,

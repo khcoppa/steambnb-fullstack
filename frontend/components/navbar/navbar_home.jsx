@@ -37,7 +37,7 @@ class NavbarHome extends React.Component {
     return (
       <div className="navbar-home">
         <div className="logo-div">
-          <i id="logo" className="icon fa fa-tint"></i>
+            <Link to={'/'}><i id="logo" className="icon fa fa-tint"></i></Link>
         </div>
         <div className="right-nav">
           <ul>
@@ -59,7 +59,7 @@ class NavbarHome extends React.Component {
           isOpen={this.state.modalOpen}
           onRequestClose={this.onModalClose}
           style={ModalStyle}
-          >
+        >
           <button id="modal-close" onClick={this.onModalClose}>X</button>
           {component}
         </Modal>
