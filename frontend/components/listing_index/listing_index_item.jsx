@@ -2,7 +2,6 @@ import React from 'react';
 import { Link, withRouter } from 'react-router-dom';
 
 const ListingIndexItem = (props) => {
-  debugger
   return (
     <li>
       <img src={props.listing.image_url} />

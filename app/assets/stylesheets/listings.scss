@@ -1,3 +1,25 @@
-// Place all the styles related to the Listings controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+.listing-page {
+  width: 100%;
+  padding: 20px;
+  display: flex;
+}
+
+.map-index {
+  height: 100%;
+  width: 40%;
+}
+
+.map {
+  height: 600px;
+  width: 100%;
+}
+
+.listing-index {
+  width: 60%;
+}
+
+.listing-index ul {
+  list-style: none;
+  column-count: 2;
+  column-gap: 10px;
+}
