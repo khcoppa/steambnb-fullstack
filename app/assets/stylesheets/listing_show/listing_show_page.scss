@@ -40,8 +40,11 @@
 .anchors ul a {
   text-decoration: none;
   color: #18797c;
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 400;
+}
+.anchors ul a:hover {
+  text-decoration: underline;
 }
 // anchors done
 
@@ -71,9 +74,6 @@
 .overview ul li:first-of-type{
   margin-left: 0;
   list-style: none;
-}
-.overview i {
-
 }
 
 

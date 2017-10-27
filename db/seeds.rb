@@ -39,7 +39,7 @@ Listing.create!(
 Listing.create!(
   title: 'Listing 3',
   host_id: 1,
-  image_url: 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Highgrove_Sauna.jpg/200px-Highgrove_Sauna.jpg',
+  image_url: 'https://i.pinimg.com/originals/5b/b6/9a/5bb69a6e211189c70c58686379cb63d6.jpg',
   price: 300,
   location: 'Kansas City, Kansas',
   guests: 3,
@@ -51,7 +51,7 @@ Listing.create!(
 Listing.create!(
   title: 'Listing 4',
   host_id: 1,
-  image_url: 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Highgrove_Sauna.jpg/200px-Highgrove_Sauna.jpg',
+  image_url: 'https://i.pinimg.com/originals/17/a9/4b/17a94bcf29f8c465c29ddeeaec3403c8.jpg',
   price: 400,
   location: 'Toronto, Canada',
   guests: 4,

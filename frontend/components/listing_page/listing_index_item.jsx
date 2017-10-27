@@ -11,8 +11,8 @@ class ListingIndexItem extends React.Component {
       <Link to={`/listings/${this.props.listing.id}`}>
         <li className="listing-item">
           <img src={this.props.listing.image_url} />
-          <h3>From {this.props.listing.price} per night : {this.props.listing.title}</h3>
-          <p>{this.props.listing.beds} beds</p>
+          <h3>{this.props.listing.title}</h3>
+          <p>From ${this.props.listing.price} per night</p>
         </li>
       </Link>
     );

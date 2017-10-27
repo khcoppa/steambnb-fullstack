@@ -1,4 +1,28 @@
-.listing-index ul a li img {
-  width: 250px;
-  height: 250px;
+.listing-index a {
+  font-family: 'Poppins', sans-serif;
+  text-decoration: none;
+}
+
+.listing-index ul {
+  margin-top: 30px;
+}
+
+.listing-index img {
+  width: 100%;
+  height: 300px;
+}
+
+.listing-index h3 {
+  color: #505050;
+  font-size: 17px;
+  margin: 3px 0 0 0;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.listing-index p {
+  margin-top: 1px;
+  color: #656565;
+  font-size: 13px;
+  font-weight: 300;
+  margin-bottom: 70px;
 }

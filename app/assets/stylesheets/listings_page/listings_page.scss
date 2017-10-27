@@ -5,13 +5,13 @@
 
 .map {
   float: right;
-  height: inherit;
-  width: 40%;
+  height: 100%;
+  width: 34%;
 }
 
 .listing-index {
   float: left;
-  width: 50%;
+  width: 66%;
   height: inherit;
 }
 
@@ -19,7 +19,8 @@
   list-style: none;
   column-count: 2;
   column-gap: 10px;
-  padding-left: 20px;
+  padding-left: 25px;
+  padding-right: 25px;
 }
 
 .listing-index ul li {
