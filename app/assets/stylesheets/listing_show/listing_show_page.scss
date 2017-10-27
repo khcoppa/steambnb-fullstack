@@ -4,15 +4,92 @@
 
 .listing-img {
   width: inherit;
-  height: 73%;
+  height: 72%;
 }
-
 .listing-img img {
   width: 100%;
   height: 100%;
 }
 
-.listing-information {
+#listing-show-details {
   margin-left: 8%;
   margin-right: 8%;
 }
+
+.listing-information {
+  width: 60%;
+}
+
+// anchors section
+.anchors {
+  border-bottom: 1px solid #d9d9d9;
+  height: 33px;
+}
+.anchors ul {
+  list-style: none;
+  padding: 0;
+}
+.anchors ul li {
+  display: inline;
+  margin-left: 10px;
+}
+.anchors ul li:first-of-type{
+  margin-left: 0;
+  list-style: none;
+}
+.anchors ul a {
+  text-decoration: none;
+  color: #18797c;
+  font-size: 14px;
+  font-weight: 400;
+}
+// anchors done
+
+.overview h1 {
+  color: #404040;
+  font-size: 38px;
+  margin-top: 20px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.overview p {
+  color: #606060;
+  font-size: 16px;
+  font-weight: 300;
+}
+.overview ul {
+  color: #606060;
+  font-size: 16px;
+  font-weight: 300;
+  list-style: none;
+  padding: 0;
+}
+.overview ul li {
+  display: inline;
+  margin-left: 10px;
+}
+.overview ul li:first-of-type{
+  margin-left: 0;
+  list-style: none;
+}
+.overview i {
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//end

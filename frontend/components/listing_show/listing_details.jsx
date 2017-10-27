@@ -32,7 +32,7 @@ class ListingDetails extends React.Component {
                 <li><i className="fa fa-users"></i> {this.props.listing.guests} guests</li>
                 <li><i className="fa fa-bold"></i> {this.props.listing.bedrooms} bedrooms</li>
                 <li><i className="fa fa-bed"></i> {this.props.listing.beds} beds</li>
-                <li><i className="fa fa-bath"></i> {this.props.listing.baths} baths</li>
+                <li><i className="fa fa-bath"></i> {this.props.listing.bath} baths</li>
               </ul>
             </div>
 
