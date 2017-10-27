@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import ListingMap from '../listing_map/listing_map';
 
 class ListingDetails extends React.Component {
   constructor(props){
@@ -12,6 +13,7 @@ class ListingDetails extends React.Component {
   }
 
   render() {
+    const listingArr = [this.props.listing];
     if (this.props.listing) {
       return (
         <div id="listing-show-details">
@@ -40,9 +42,10 @@ class ListingDetails extends React.Component {
               <a name="reviews"></a>
             </div>
 
-            <div className="location">
-              <a name="location"></a>
-            </div>
+            <a name="location"></a>
+            <ListingMap
+              listings={listingArr}
+            />
           </div>
         </div>
       );

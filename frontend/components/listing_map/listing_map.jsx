@@ -35,11 +35,19 @@ class ListingMap extends React.Component {
   }
 
   render() {
-    return (
-      <div className="map" ref={map => this.mapNode = map}>
-        Map
-      </div>
-    );
+    if (this.props.listings.length === 1) {
+      return (
+        <div className="single-map" ref={map => this.mapNode = map}>
+          Map
+        </div>
+      );
+    } else {
+      return (
+        <div className="map" ref={map => this.mapNode = map}>
+          Map
+        </div>
+      );
+    }
   }
 }
 
