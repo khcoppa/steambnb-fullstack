@@ -8,6 +8,5 @@ class CreateBookings < ActiveRecord::Migration[5.1]
 
       t.timestamps
     end
-    add_index(:booked, [:booker_id, :listing_id, :start_date, :end_date])
   end
 end
