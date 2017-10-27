@@ -1,23 +1,27 @@
-.listing-div {
+#listings-div {
   width: 100%;
-  height: 100%;
-  padding: 20px;
-  position: relative;
+  height: inherit;
 }
 
 .map {
   float: right;
-  height: 500px;
+  height: inherit;
   width: 40%;
 }
 
 .listing-index {
   float: left;
   width: 50%;
+  height: inherit;
 }
 
 .listing-index ul {
   list-style: none;
   column-count: 2;
   column-gap: 10px;
+  padding-left: 20px;
+}
+
+.listing-index ul li {
+  cursor: pointer;
 }

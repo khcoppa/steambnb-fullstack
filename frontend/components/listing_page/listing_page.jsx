@@ -5,7 +5,7 @@ import ListingIndex from './listing_index';
 import ListingMap from './../listing_map/listing_map';
 
 const ListingPage = (props) => (
-  <div className="listings-div">
+  <div id="listings-div">
     <FilterBar />
     <ListingIndex
       listings={props.listings}
