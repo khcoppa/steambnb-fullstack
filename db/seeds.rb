@@ -16,7 +16,7 @@ User.create!(
 Listing.create!(
   title: 'Listing 1',
   host_id: 1,
-  image_url: 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Highgrove_Sauna.jpg/200px-Highgrove_Sauna.jpg',
+  image_url: 'https://d31eqxppr3nlos.cloudfront.net/wp-content/uploads/2014/04/shutterstock_154073177.jpg',
   price: 100,
   location: 'Los Angeles, California',
   guests: 1,
@@ -27,7 +27,7 @@ Listing.create!(
 Listing.create!(
   title: 'Listing 2',
   host_id: 1,
-  image_url: 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Highgrove_Sauna.jpg/200px-Highgrove_Sauna.jpg',
+  image_url: 'https://a0.muscache.com/im/pictures/7255437/22cc8c2d_original.jpg?aki_policy=xx_large',
   price: 200,
   location: 'New York, New York',
   guests: 2,
