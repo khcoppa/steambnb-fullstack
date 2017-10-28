@@ -14,9 +14,9 @@ User.create!(
 )
 
 Listing.create!(
-  title: 'Listing 1',
+  title: 'Gøteborg Bathing Culture',
   host_id: 1,
-  image_url: 'https://d31eqxppr3nlos.cloudfront.net/wp-content/uploads/2014/04/shutterstock_154073177.jpg',
+  image_url: 'http://images.adsttc.com/media/images/5625/98eb/e58e/ce12/7a00/00ae/slideshow/Gb_sauna_inside_2.jpg?1445304536',
   price: 100,
   location: 'Los Angeles, California',
   guests: 1,
@@ -25,9 +25,9 @@ Listing.create!(
   bath: 1
 )
 Listing.create!(
-  title: 'Listing 2',
+  title: 'Large Triple-Level Sauna House',
   host_id: 1,
-  image_url: 'https://a0.muscache.com/im/pictures/7255437/22cc8c2d_original.jpg?aki_policy=xx_large',
+  image_url: 'https://d31eqxppr3nlos.cloudfront.net/wp-content/uploads/2014/04/shutterstock_92887687.jpg',
   price: 200,
   location: 'New York, New York',
   guests: 2,
@@ -37,9 +37,9 @@ Listing.create!(
 )
 
 Listing.create!(
-  title: 'Listing 3',
+  title: 'Norwegian Viewpoint Snøhetta',
   host_id: 1,
-  image_url: 'https://i.pinimg.com/originals/5b/b6/9a/5bb69a6e211189c70c58686379cb63d6.jpg',
+  image_url: 'https://nordre-ekre.no/wp-content/uploads/2016/01/nordre-ekre-viewpointSN%C3%98HETTA%C2%A9diephotodesigner_2.jpg',
   price: 300,
   location: 'Kansas City, Kansas',
   guests: 3,
@@ -49,9 +49,9 @@ Listing.create!(
 )
 
 Listing.create!(
-  title: 'Listing 4',
+  title: 'Project Floating Sauna',
   host_id: 1,
-  image_url: 'https://i.pinimg.com/originals/17/a9/4b/17a94bcf29f8c465c29ddeeaec3403c8.jpg',
+  image_url: 'https://www.competitionline.com/upload/images/f/b/9/2/3/7/1/9/fb923719d041e3fb0949fd34832eb532_1.jpg',
   price: 400,
   location: 'Toronto, Canada',
   guests: 4,
