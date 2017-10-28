@@ -13,6 +13,7 @@ class ListingShow extends React.Component {
     }
   }
   render() {
+    debugger
     if (this.props.listing) {
       return(
         <div id="listing-show-page">
@@ -23,6 +24,10 @@ class ListingShow extends React.Component {
             listing={this.props.listing}
             listingId={this.props.listingId}
             fetchListing={this.props.fetchListing}
+          />
+          <BookingForm
+            listingId={this.props.listing.id}
+            bookerId={this.state.currentUser.id}
           />
         </div>
       );

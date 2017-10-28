@@ -7,6 +7,7 @@ class ListingIndexItem extends React.Component {
   }
 
   render() {
+    debugger
     return (
       <Link to={`/listings/${this.props.listing.id}`}>
         <li className="listing-item">
