@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 import ListingDetails from './listing_details';
+import BookingForm from '../booking_form/booking_form';
 
 class ListingShow extends React.Component {
   constructor(props){
@@ -13,8 +14,7 @@ class ListingShow extends React.Component {
     }
   }
   render() {
-    debugger
-    if (this.props.listing) {
+    if (this.props.listing && this.props.currentUserId) {
       return(
         <div id="listing-show-page">
           <div className="listing-img">
@@ -27,7 +27,21 @@ class ListingShow extends React.Component {
           />
           <BookingForm
             listingId={this.props.listing.id}
-            bookerId={this.state.currentUser.id}
+            bookerId={this.props.currentUserId}
+            createBooking={this.props.createBooking}
+          />
+        </div>
+      );
+    } else if (this.props.listing) {
+      return(
+        <div id="listing-show-page">
+          <div className="listing-img">
+            <img src={this.props.listing.image_url} />
+          </div>
+          <ListingDetails
+            listing={this.props.listing}
+            listingId={this.props.listingId}
+            fetchListing={this.props.fetchListing}
           />
         </div>
       );
