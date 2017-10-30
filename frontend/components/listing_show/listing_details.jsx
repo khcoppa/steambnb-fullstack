@@ -14,6 +14,17 @@ const reviewList = (reviews = []) => (
   ))
 );
 
+const averageRating = (reviews = []) => {
+  let ratings = 0;
+  let count = 0;
+  reviews.forEach(review => {
+    ratings += review.rating;
+    count += 1;
+  });
+  let average = (ratings/count);
+  return average;
+};
+
 class ListingDetails extends React.Component {
   constructor(props){
     super(props);
@@ -51,7 +62,7 @@ class ListingDetails extends React.Component {
 
           <div className="reviews">
             <a name="reviews"></a>
-            <h2>{this.props.listing.reviews.length} Reviews</h2>
+            <h2>{this.props.listing.reviews.length} Reviews {averageRating(this.props.listing.reviews)} stars</h2>
             {reviewList(this.props.listing.reviews)}
           </div>
 

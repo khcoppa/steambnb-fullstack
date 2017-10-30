@@ -32,6 +32,7 @@ class ListingShow extends React.Component {
             userId={this.props.user.id}
             listingId={this.props.listingId}
             createBooking={this.props.createBooking}
+            listing={this.props.listing}
           />
         </div>
       );

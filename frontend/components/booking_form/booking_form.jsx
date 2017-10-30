@@ -24,6 +24,7 @@ class BookingForm extends React.Component {
   render() {
     return(
       <div className="booking-form">
+        <h3>From ${this.props.listing.price} per night</h3>
         <form onSubmit={this.handleSubmit}>
           <div className="check-in">
             <label>Check In</label>

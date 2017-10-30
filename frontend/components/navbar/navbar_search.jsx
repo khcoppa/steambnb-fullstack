@@ -25,7 +25,6 @@ class NavbarSearch extends React.Component {
 
   handleLogout() {
     this.props.logout();
-    this.props.history.push('/loggedOut');
   }
 
   matches() {
