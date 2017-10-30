@@ -1,10 +1,14 @@
 import { connect } from 'react-redux';
-import { login, signup, logout } from '../../actions/session_actions';
-import NavbarHome from './navbar_home';
 
-const mapStateToProps = ({ session }) => ({
-  currentUser: session.currentUser
-});
+import { login, signup, logout } from '../../actions/session_actions';
+import NavbarSearch from './navbar_search';
+
+const mapStateToProps = ({ session, entities }) => {
+  return {
+    currentUser: session.currentUser,
+    listings: entities.listings
+  };
+};
 
 const mapDispatchToProps = dispatch => ({
   login: (user) => dispatch(login(user)),
@@ -15,4 +19,4 @@ const mapDispatchToProps = dispatch => ({
 export default connect(
   mapStateToProps,
   mapDispatchToProps
-)(NavbarHome);
+)(NavbarSearch);
