@@ -1,0 +1,52 @@
+.booking-form {
+  font-size: 14px;
+  color: #404040;
+  font-weight: 300;
+  padding: 10px;
+  margin-left: 55%;
+  width: 25%;
+  height: 350px;
+  border: 1px solid #d9d9d9;
+}
+
+
+.booking-form {
+  div {
+    display: inline-block;
+    margin-top: 10px;
+    width: 50%;
+    margin-bottom: 50px;
+  }
+  div label {
+    display: block;
+    font-weight: 400;
+    color: #404040;
+    letter-spacing: 1px;
+  }
+  form {
+    padding-bottom: 50px;
+    border-bottom: 1px solid #d9d9d9;
+  }
+  input {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    color: #757575;
+    border: 1px solid #d9d9d9;
+    height: 40px;
+    width: 100%;
+    padding-left: 5px;
+  }
+  button {
+    background-color: #ff6666;
+    color: white;
+    display: block;
+    margin: 0 auto;
+    width: 97%;
+    height: 40px;
+    font-size: 14px;
+    font-weight: 500;
+    border: none;
+    border-radius: 3px;
+    letter-spacing: 1px;
+  }
+}

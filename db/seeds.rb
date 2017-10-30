@@ -8,6 +8,7 @@
 User.delete_all
 Listing.delete_all
 Review.delete_all
+Booking.delete_all
 
 User.create!(
   id: 1,
@@ -74,4 +75,10 @@ Review.create!(
   rating: 5,
   listing_id: 1,
   user_id: 1
+)
+Booking.create!(
+  booker_id: 1,
+  listing_id: 1,
+  start_date: "2017-11-01",
+  end_date: "2017-11-04"
 )

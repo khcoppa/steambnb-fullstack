@@ -13,10 +13,18 @@ export const fetchListing = id => (
   })
 );
 
-export const createReview = data => (
+export const createReview = review => (
   $.ajax({
     method: 'post',
     url: 'api/reviews',
-    data
+    data: {review}
+  })
+);
+
+export const createBooking = booking => (
+  $.ajax({
+    method: 'post',
+    url: '/api/bookings',
+    data: {booking}
   })
 );

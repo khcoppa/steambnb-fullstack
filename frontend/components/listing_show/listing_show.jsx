@@ -14,7 +14,7 @@ class ListingShow extends React.Component {
     }
   }
   render() {
-   if (this.props.listing) {
+   if (this.props.listing && this.props.user) {
      return(
         <div id="listing-show-page">
           <div className="listing-img">
@@ -27,6 +27,12 @@ class ListingShow extends React.Component {
               fetchListing={this.props.fetchListing}
             />
           </div>
+
+          <BookingForm
+            userId={this.props.user.id}
+            listingId={this.props.listingId}
+            createBooking={this.props.createBooking}
+          />
         </div>
       );
     } else {

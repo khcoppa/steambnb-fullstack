@@ -26,7 +26,6 @@ const App = () => (
     </header>
     <Switch>
       <Route exact path="/" component={Homepage} />
-      // make AuthRoute
 
       <Route path="/listings/:listingId" component={ListingShowContainer} />
       <Route path="/listings" component={ListingPageContainer} />
