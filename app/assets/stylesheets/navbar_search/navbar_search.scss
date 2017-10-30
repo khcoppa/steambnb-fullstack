@@ -1,8 +1,7 @@
 .navbar-search {
   display: flex;
-  justify-content: space-between;
   padding: 5px 0;
-  height: 75px;
+  height: 70px;
   align-items: center;
 }
 
@@ -11,9 +10,30 @@
   box-shadow: 3px 3px 3px #ccc;
   height: 50px;
   align-items: center;
-  position: fixed;
-  margin-left: 77px;
+  margin-left: 40px;
   width: 45%;
+}
+
+.user-logout {
+  margin-left: 445px;
+}
+
+.user-logout ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+.user-logout ul li {
+  margin-right: 25px;
+}
+.user-logout button {
+  border-bottom: 2px solid white;
+}
+
+.user-logout button:hover {
+  border-color: #505050;
+  cursor: pointer;
 }
 
 .search-bar i {
@@ -21,7 +41,7 @@
   color: #606060;
   margin: 0 auto;
   margin-top: 10px;
-  margin-left: 10px;
+  margin-left: 20px;
 }
 
 .search-bar input {
@@ -31,6 +51,7 @@
   height: 80%;
   margin: 0 auto;
   margin-left: 20px;
+  width: 85%;
 }
 input:enabled {
   outline: none;

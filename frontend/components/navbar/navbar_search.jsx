@@ -7,6 +7,8 @@ import { withRouter } from 'react-router-dom';
 import SignupFormContainer from '../session_forms/signup_form_container';
 import LoginFormContainer from '../session_forms/login_form_container';
 
+import NavbarHomeContainer from './navbar_home_container';
+
 class NavbarSearch extends React.Component {
   constructor(props) {
     super(props);
@@ -19,6 +21,11 @@ class NavbarSearch extends React.Component {
 
   handleInput(e) {
     this.setState({searchVal: e.currentTarget.value});
+  }
+
+  handleLogout() {
+    this.props.logout();
+    this.props.history.push('/loggedOut');
   }
 
   matches() {
@@ -39,35 +46,42 @@ class NavbarSearch extends React.Component {
   }
 
   render() {
-    return (
-      <div className="navbar-search">
-        <div className="logo-div">
-          <Link to={'/'}><i id="logo" className="icon fa fa-tint"></i></Link>
-        </div>
+    if (this.props.currentUser) {
+      return (
+        <div className="navbar-search">
+          <div className="logo-div">
+            <Link to={'/'}><i id="logo" className="icon fa fa-tint"></i></Link>
+          </div>
 
-        <div className='search-bar'>
-          <i className="fa fa-search"></i>
-          <input
-            onChange={this.handleInput}
-            value={this.state.inputVal}
-            placeholder='Anywhere'/>
-        </div>
+          <div className='search-bar'>
+            <i className="fa fa-search"></i>
+            <input
+              onChange={this.handleInput}
+              value={this.state.inputVal}
+              placeholder='Anywhere'/>
+          </div>
 
-        <div className="right-nav">
-          <ul>
-            <li>
-              <h4>{this.props.currentUser.username}</h4>
-            </li>
+          <div className="user-logout">
+            <ul>
+              <li>
+                <h4>{this.props.currentUser.username}</h4>
+              </li>
 
-            <li>
-              <button className="astext" onClick={this.props.logout}>
-                Log Out
-              </button>
-            </li>
-          </ul>
+              <li>
+                <button className="astext" onClick={this.handleLogout}>
+                  Log Out
+                </button>
+              </li>
+            </ul>
+          </div>
         </div>
-      </div>
-    );
+      );
+    } else {
+      return (
+        <NavbarHomeContainer />
+      );
+    }
+
   }
 }
 export default withRouter(NavbarSearch);
