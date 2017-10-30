@@ -6,18 +6,22 @@ import ListingShow from './listing_show';
 const mapStateToProps = (state, ownProps) => {
   const listingId = parseInt(ownProps.match.params.listingId);
   const listing = state.entities.listings[listingId];
-  if (state.session.currentUser) {
-    const currentUserId = state.session.currentUser.id;
-    return {
-      listingId,
-      listing,
-      currentUserId
-    };
-  } else {
-    return {
-      listingId,
-      listing
-    };
+  // if (state.session.currentUser) {
+  //   const currentUserId = state.session.currentUser.id;
+  //   return {
+  //     listingId,
+  //     listing,
+  //     currentUserId
+  //   };
+  // } else {
+  //   return {
+  //     listingId,
+  //     listing
+  //   };
+  // }
+  return {
+    listingId,
+    listing
   }
 };
 

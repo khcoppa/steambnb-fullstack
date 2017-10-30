@@ -1,6 +1,17 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import ListingMap from '../listing_map/listing_map';
+import ReviewShow from './review_show';
+
+const reviewList = (reviews = []) => (
+  reviews.map(review => (
+    <ReviewShow
+      key={review.id}
+      rating={review.rating}
+      body={review.body}
+    />
+  ))
+);
 
 class ListingDetails extends React.Component {
   constructor(props){
@@ -39,6 +50,7 @@ class ListingDetails extends React.Component {
 
           <div className="reviews">
             <a name="reviews"></a>
+            {reviewList(this.props.listing.reviews)}
           </div>
 
           <a name="location"></a>
