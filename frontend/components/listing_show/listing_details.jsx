@@ -25,7 +25,6 @@ class ListingDetails extends React.Component {
   }
 
   render() {
-    debugger
     const listingArr = [this.props.listing];
     if (this.props.listing) {
       return (

@@ -69,3 +69,9 @@ Review.create!(
   listing_id: 1,
   user_id: 1
 )
+Review.create!(
+  body: 'The place was as amazing as it seemed. The drive up was beautiful and it was very easy to find with the directions given. As you walk into the gate the smell was intoxicating, and the place has so much charm.',
+  rating: 5,
+  listing_id: 1,
+  user_id: 1
+)
