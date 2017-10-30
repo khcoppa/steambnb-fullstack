@@ -13,7 +13,7 @@ const receiveListing = listing => ({
   listing
 });
 const receiveReview = review => ({
-  type: 'RECEIVE_REVIEW',
+  type: RECEIVE_REVIEW,
   review
 });
 

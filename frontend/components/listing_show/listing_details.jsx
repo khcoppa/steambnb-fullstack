@@ -24,6 +24,7 @@ class ListingDetails extends React.Component {
   }
 
   render() {
+    debugger
     const listingArr = [this.props.listing];
     if (this.props.listing) {
       return (
@@ -50,6 +51,7 @@ class ListingDetails extends React.Component {
 
           <div className="reviews">
             <a name="reviews"></a>
+            <h2>{this.props.listing.reviews.length} Reviews</h2>
             {reviewList(this.props.listing.reviews)}
           </div>
 

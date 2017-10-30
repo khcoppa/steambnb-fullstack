@@ -7,6 +7,7 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 User.delete_all
 Listing.delete_all
+Review.delete_all
 
 User.create!(
   username: 'guest',
@@ -14,6 +15,7 @@ User.create!(
 )
 
 Listing.create!(
+  id: 1,
   title: 'Gøteborg Bathing Culture',
   host_id: 1,
   image_url: 'http://images.adsttc.com/media/images/5625/98eb/e58e/ce12/7a00/00ae/slideshow/Gb_sauna_inside_2.jpg?1445304536',
@@ -58,4 +60,10 @@ Listing.create!(
   bedrooms: 4,
   beds: 4,
   bath: 4
+)
+
+Review.create!(
+  body: 'Very nice',
+  rating: 5,
+  listing_id: 1
 )
