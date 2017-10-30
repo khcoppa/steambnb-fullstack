@@ -33,7 +33,7 @@ class NavbarSearch extends React.Component {
     this.props.listings.forEach(listing => {
       let title = listing.title;
       let subTitle = title.slice(0, this.state.searchVal.length);
-      if (subTitle.toLowerCase() === this.state.inputVal.toLowerCase()) {
+      if (subTitle.toLowerCase() === this.state.searchVal.toLowerCase()) {
         matches.push(title);
       }
     });
@@ -42,7 +42,7 @@ class NavbarSearch extends React.Component {
 
   selectListing(e) {
     let title = e.currentTarget.innerText;
-    this.setState({ inputVal: title });
+    this.setState({ searchVal: title });
   }
 
   render() {
@@ -57,7 +57,7 @@ class NavbarSearch extends React.Component {
             <i className="fa fa-search"></i>
             <input
               onChange={this.handleInput}
-              value={this.state.inputVal}
+              value={this.state.searchVal}
               placeholder='Anywhere'/>
           </div>
 

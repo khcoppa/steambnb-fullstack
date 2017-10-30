@@ -1,14 +1,14 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-class BookingForm extends React.Component {
+class ReviewForm extends React.Component {
   constructor(props){
     super(props);
     this.state = {
+      user_id: this.props.userId,
       listing_id: this.props.listingId,
-      booker_id: this.props.userId,
-      start_date: "",
-      end_date: ""
+      body: "",
+      rating: 5
     };
     this.handleSubmit = this.handleSubmit.bind(this);
   }
@@ -23,15 +23,15 @@ class BookingForm extends React.Component {
    }
   render() {
     return(
-      <div className="booking-form">
+      <div className="review-form">
         <form onSubmit={this.handleSubmit}>
           <div className="check-in">
-            <label>Check In</label>
+            <label>Rating</label>
               <br />
               <input
-                type="date"
-                value={this.state.start_date}
-                onChange={this.update('start_date')}
+                type="radio"
+                value={this.state.rating}
+                onChange={this.update('rating')}
               />
           </div>
           <div className="check-out">
@@ -50,4 +50,4 @@ class BookingForm extends React.Component {
   }
 }
 
-export default BookingForm;
+export default ReviewForm;
