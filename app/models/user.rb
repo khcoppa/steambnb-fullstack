@@ -8,7 +8,10 @@ class User < ApplicationRecord
   attr_reader :password
 
   # associations
-  
+  has_many :bookings,
+    foreign_key: :booker_id,
+    class_name: 'Booking'
+
   def self.find_by_credentials(username, password)
     user = User.find_by(username: username)
     return nil unless user

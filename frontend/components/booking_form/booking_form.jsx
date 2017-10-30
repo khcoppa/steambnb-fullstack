@@ -30,16 +30,16 @@ class BookingForm extends React.Component {
     return(
       <div className="booking-form">
         <form onSubmit={this.handleSubmit}>
-          <div className="start-date-input">
-            <label>Start Date
+          <div className="check-in">
+            <label>Check In
               <input
                 type="date"
                 value={this.state.start_date}
                 onChange={this.update('start_date')} />
             </label>
           </div>
-          <div className="end-date-input">
-            <label>End Date
+          <div className="check-out">
+            <label>Check Out
               <input
                 type="date"
                 value={this.state.end_date}

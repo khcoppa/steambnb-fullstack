@@ -20,16 +20,18 @@ class ListingShow extends React.Component {
           <div className="listing-img">
             <img src={this.props.listing.image_url} />
           </div>
-          <ListingDetails
-            listing={this.props.listing}
-            listingId={this.props.listingId}
-            fetchListing={this.props.fetchListing}
-          />
-          <BookingForm
-            listingId={this.props.listing.id}
-            bookerId={this.props.currentUserId}
-            createBooking={this.props.createBooking}
-          />
+          <div id="listing-show-details">
+            <ListingDetails
+              listing={this.props.listing}
+              listingId={this.props.listingId}
+              fetchListing={this.props.fetchListing}
+            />
+            <BookingForm
+              listingId={this.props.listing.id}
+              bookerId={this.props.currentUserId}
+              createBooking={this.props.createBooking}
+            />
+          </div>
         </div>
       );
     } else if (this.props.listing) {
@@ -38,11 +40,13 @@ class ListingShow extends React.Component {
           <div className="listing-img">
             <img src={this.props.listing.image_url} />
           </div>
-          <ListingDetails
-            listing={this.props.listing}
-            listingId={this.props.listingId}
-            fetchListing={this.props.fetchListing}
-          />
+          <div id="listing-show-details">
+            <ListingDetails
+              listing={this.props.listing}
+              listingId={this.props.listingId}
+              fetchListing={this.props.fetchListing}
+            />
+          </div>
         </div>
       );
     } else {
