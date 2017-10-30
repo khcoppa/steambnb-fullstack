@@ -10,6 +10,7 @@ Listing.delete_all
 Review.delete_all
 
 User.create!(
+  id: 1,
   username: 'guest',
   password: 'password'
 )
@@ -65,5 +66,6 @@ Listing.create!(
 Review.create!(
   body: 'Very nice',
   rating: 5,
-  listing_id: 1
+  listing_id: 1,
+  user_id: 1
 )

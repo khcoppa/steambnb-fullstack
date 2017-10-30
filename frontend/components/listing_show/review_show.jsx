@@ -1,11 +1,15 @@
 import React from 'react';
 
-const Review = ({ rating, body }) => (
-  <div className="review-show">
+const Review = ({ rating, body, user }) => {
+  debugger
+  return (
+    <div className="review-show">
+    <h5>{user.username}</h5>
     <ul>
-      <li>Rating: { rating }</li>
-      <li>{ body }</li>
+    <li>Rating: { rating }</li>
+    <li>{ body }</li>
     </ul>
-  </div>
-);
+    </div>
+  );
+};
 export default Review;

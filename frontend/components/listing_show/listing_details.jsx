@@ -9,6 +9,7 @@ const reviewList = (reviews = []) => (
       key={review.id}
       rating={review.rating}
       body={review.body}
+      user={review.user}
     />
   ))
 );
