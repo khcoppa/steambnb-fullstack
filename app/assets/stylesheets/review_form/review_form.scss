@@ -1,2 +1,95 @@
-//star review form was learned from A Pen by Neil Pomerleau
- //https://codepen.io/neilpomerleau/pen/wzxzQr
+.review-form {
+  display: flex;
+  margin-right: 7%;
+  margin-left: 7%;
+}
+
+.listing-div {
+  margin-top: 100px;
+  float: left;
+  width: 30%;
+  height: 500px;
+  margin-right: 5%;
+}
+.listing-div img {
+  border-radius: 5px;
+  width: 100%;
+  height: 250px;
+}
+.listing-div h3 {
+  color: #505050;
+  font-size: 17px;
+  margin: 3px 0 0 0;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+.listing-div h4 {
+  color: black;
+  font-size: 12px;
+  margin: 3px 0 0 0;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.listing-div p {
+  margin-top: 1px;
+  color: #656565;
+  font-size: 14px;
+  font-weight: 300;
+  margin-bottom: 70px;
+}
+
+.review-form {
+  form {
+    float: right;
+    border: 1px solid #d9d9d9;
+    border-radius: 5px;
+    margin-top: 100px;
+    height: auto;
+    padding: 10px;
+  }
+}
+
+.stars {
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.rating span {
+  color: #f7c602;
+}
+.rating h2 {
+  color: #505050;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+.body h2 {
+  color: #505050;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  width: fit-content;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.body textarea {
+  margin-left: 85px;
+  border: 1px solid #d9d9d9;
+}
+
+#review-button {
+  background-color: #18797c;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  padding: 10px;
+  width: 90px;
+  letter-spacing: 1px;
+  font-size: 12px;
+  font-weight: 400;
+  margin-top: 40px;
+  margin-left: 170px;
+}
