@@ -11,7 +11,9 @@ const ListingPage = (props) => (
       listings={props.listings}
       fetchListings={props.fetchListings}
     />
-    <ListingMap listings={props.listings} />
+    <ListingMap
+      listings={props.listings}
+      updateFilter={props.updateFilter} />
   </div>
 );
 

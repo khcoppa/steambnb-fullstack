@@ -26,7 +26,9 @@ Listing.create!(
   guests: 1,
   bedrooms: 1,
   beds: 1,
-  bath: 1
+  bath: 1,
+  lat: 34.065108,
+  lng: -118.268257
 )
 Listing.create!(
   title: 'Large Triple-Level Sauna House',
@@ -37,7 +39,9 @@ Listing.create!(
   guests: 2,
   bedrooms: 2,
   beds: 2,
-  bath: 2
+  bath: 2,
+  lat: 40.767911,
+  lng: -73.967352
 )
 
 Listing.create!(
@@ -49,7 +53,9 @@ Listing.create!(
   guests: 3,
   bedrooms: 3,
   beds: 3,
-  bath: 3
+  bath: 3,
+  lat: 39.077724,
+  lng: -94.593604
 )
 
 Listing.create!(
@@ -61,7 +67,9 @@ Listing.create!(
   guests: 4,
   bedrooms: 4,
   beds: 4,
-  bath: 4
+  bath: 4,
+  lat: 43.740927,
+  lng: -79.223375
 )
 
 Review.create!(

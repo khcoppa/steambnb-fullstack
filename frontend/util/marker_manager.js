@@ -5,28 +5,34 @@ export default class MarkerManager {
     this.map = map;
     this.markers = {};
     this.handleClick = handleClick;
-    this.geocoder = new google.maps.Geocoder();
   }
 
   updateMarkers(listings) {
+    const listingsHash = {};
+    listings.forEach(listing => listingsHash[listing.id] = listing);
+
     listings
       .filter(listing => !this.markers[listing.id])
-      .forEach(listing => this.createMarkerFromListing(listing));
+      .forEach(listing => this.createMarkerFromListing(listing, this.handleClick))
+
+    Object.keys(this.markers)
+      .filter(id => !listingsHash[id])
+      .forEach((id) => this.removeMarker(this.markers[id]))
   }
 
   createMarkerFromListing(listing) {
-    const address = listing.location;
-    this.geocoder.geocode({ 'address': address }, (results, status) => {
-      if (status == 'OK') {
-        const marker = new google.maps.Marker({
-          position: results[0].geometry.location,
-          map: this.map,
-          listingId: listing.id
-        });
-        this.markers[marker.listingId] = listing;
-      } else {
-        alert('Geocode was not successful for the following reason: ' + status);
-      }
+    const position = new google.maps.LatLng(listing.lat, listing.lng)
+    const marker = new google.maps.Marker({
+      position,
+      map: this.map,
+      listingId: listing.id
     });
+    marker.addListener('click', () => this.handleClick(listing));
+    this.markers[marker.listingId] = marker;
+  }
+
+  removeMarker(marker) {
+    this.markers[marker.listingId].setMap(null);
+    delete this.markers[marker.listingId];
   }
 }

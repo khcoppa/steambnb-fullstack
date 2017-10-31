@@ -4,17 +4,16 @@ import { withRouter } from 'react-router-dom';
 
 import MarkerManager from '../../util/marker_manager';
 
+const mapOptions = {
+  center: { lat: 39.8283, lng: -98.5795 },
+  zoom: 3
+};
+
 class ListingMap extends React.Component {
-  constructor(props) {
-    super(props)
-  }
   componentDidMount() {
-    const mapOptions = {
-      center: { lat: 39.8283, lng: -98.5795 },
-      zoom: 3
-    };
     this.map = new google.maps.Map(this.mapNode, mapOptions);
-    this.MarkerManager = new MarkerManager(this.map);
+    this.MarkerManager = new MarkerManager(this.map, this.handleMarkerClick.bind(this));
+    this.registerListeners();
     this.MarkerManager.updateMarkers(this.props.listings);
   }
 
@@ -23,11 +22,17 @@ class ListingMap extends React.Component {
   }
 
   registerListeners() {
-
+    google.maps.event.addListener(this.map, 'idle', () => {
+      const { north, south, east, west } = this.map.getBounds().toJSON();
+      const bounds = {
+        northEast: { lat:north, lng: east },
+        southWest: { lat: south, lng: west } };
+      this.props.updateFilter('bounds', bounds);
+    });
   }
 
-  handleMarkerClick() {
-
+  handleMarkerClick(listing) {
+    this.props.history.push(`listings/${listing.id}`);
   }
 
   handleClick() {
