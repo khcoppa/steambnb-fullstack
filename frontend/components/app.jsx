@@ -15,6 +15,7 @@ import loggedIn from './blank/loggedIn';
 import loggedOut from './blank/loggedOut';
 import ListingPageContainer from './listing_page/listing_page_container';
 import ListingShowContainer from './listing_show/listing_show_container';
+import ReviewFormContainer from './review_form/review_form_container';
 
 const App = () => (
   <div id="app">
@@ -27,6 +28,7 @@ const App = () => (
     <Switch>
       <Route exact path="/" component={Homepage} />
 
+      <Route path="/listings/:listingId/reviews" component={ReviewFormContainer} />
       <Route path="/listings/:listingId" component={ListingShowContainer} />
       <Route path="/listings" component={ListingPageContainer} />
 
