@@ -22,9 +22,9 @@ const receiveBooking = booking => ({
   booking
 });
 
-export const fetchListings = () => dispatch => (
-  ListingAPIUtil.fetchListings().then(listings => dispatch(receiveListings(listings)))
-);
+export const fetchListings = filters => dispatch => {
+  ListingAPIUtil.fetchListings(filters).then(listings => dispatch(receiveListings(listings)))
+};
 export const fetchListing = id => dispatch => (
   ListingAPIUtil.fetchListing(id).then(listing => dispatch(receiveListing(listing)))
 );

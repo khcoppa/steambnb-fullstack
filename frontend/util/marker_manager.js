@@ -5,6 +5,7 @@ export default class MarkerManager {
     this.map = map;
     this.markers = {};
     this.handleClick = handleClick;
+    this.removeMarker = this.removeMarker.bind(this);
   }
 
   updateMarkers(listings) {
@@ -15,6 +16,7 @@ export default class MarkerManager {
       .filter(listing => !this.markers[listing.id])
       .forEach(listing => this.createMarkerFromListing(listing, this.handleClick))
 
+    // const keys = Object.keys(this.markers).map(key => parseInt(key));
     Object.keys(this.markers)
       .filter(id => !listingsHash[id])
       .forEach((id) => this.removeMarker(this.markers[id]))
@@ -32,6 +34,7 @@ export default class MarkerManager {
   }
 
   removeMarker(marker) {
+    debugger
     this.markers[marker.listingId].setMap(null);
     delete this.markers[marker.listingId];
   }
