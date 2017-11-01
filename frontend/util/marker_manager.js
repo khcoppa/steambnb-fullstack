@@ -34,7 +34,6 @@ export default class MarkerManager {
   }
 
   removeMarker(marker) {
-    debugger
     this.markers[marker.listingId].setMap(null);
     delete this.markers[marker.listingId];
   }

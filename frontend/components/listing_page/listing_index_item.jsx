@@ -21,3 +21,5 @@ class ListingIndexItem extends React.Component {
 }
 
 export default withRouter(ListingIndexItem);
+
+// Link to={`/listings/${this.props.listing.id}`}

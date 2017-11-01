@@ -7,21 +7,21 @@
   margin-top: 30px;
 }
 
-.listing-index img {
-  border-radius: 3px;
+.listing-item img {
+  border-radius: 5px;
   width: 100%;
-  height: 285px;
+  height: 250px;
 }
 
-.listing-index h3 {
+.listing-item h3 {
   color: #505050;
   font-size: 17px;
-  margin: 3px 0px 0 0;
+  margin: 3px 0 0 0;
   font-weight: 600;
   letter-spacing: 1px;
 }
 
-.listing-index h4 {
+.listing-item h4 {
   color: black;
   font-size: 12px;
   margin: 3px 0 0 0;
@@ -30,11 +30,10 @@
   letter-spacing: 1px;
 }
 
-.listing-index p {
-  margin-top: 5px;
+.listing-item p {
+  margin-top: 1px;
   color: #656565;
   font-size: 14px;
   font-weight: 300;
-  margin-bottom: 60px;
-  letter-spacing: 1px;
+  margin-bottom: 70px;
 }

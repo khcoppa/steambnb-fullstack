@@ -2,7 +2,9 @@ import merge from 'lodash/merge';
 import { UPDATE_FILTER } from '../actions/filter_actions';
 
 const defaultFilters = Object.freeze({
-  bounds: {}
+  bounds: {},
+  start_date: "",
+  end_date: ""
 });
 
 const FiltersReducer = (state = defaultFilters, action) => {
