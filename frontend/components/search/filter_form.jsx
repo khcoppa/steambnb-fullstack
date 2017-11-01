@@ -19,6 +19,12 @@ const FilterForm = (props) => {
         onChange={handleChange('end_date', props.updateFilter)}
         placeholder="Check out"
       />
+      <input
+        type="location"
+        value={props.location}
+        onChange={handleChange('location', props.updateFilter)}
+        placeholder="location"
+      />
     </div>
   );
 }

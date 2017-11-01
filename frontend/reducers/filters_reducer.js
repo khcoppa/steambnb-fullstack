@@ -4,7 +4,8 @@ import { UPDATE_FILTER } from '../actions/filter_actions';
 const defaultFilters = Object.freeze({
   bounds: {},
   start_date: "",
-  end_date: ""
+  end_date: "",
+  location: ""
 });
 
 const FiltersReducer = (state = defaultFilters, action) => {

@@ -12,6 +12,7 @@ const Search = (props) => {
       <FilterForm
         start_date={props.start_date}
         end_date={props.end_date}
+        location={props.location}
         updateFilter={props.updateFilter}
       />
       <ListingIndex

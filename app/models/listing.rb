@@ -5,6 +5,9 @@ class Listing < ApplicationRecord
   has_many :reviews
   has_many :bookings
 
+  geocoded_by :location, :latitude=>:lat, :longitude=>:lng 
+  after_validation :geocode
+
   def self.in_bounds(bounds)
     self.where("lat < ?", bounds[:northEast][:lat])
       .where("lat > ?", bounds[:southWest][:lat])
