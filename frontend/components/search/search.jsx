@@ -8,8 +8,7 @@ import FilterForm from './filter_form';
 const Search = (props) => {
   return (
     <div id="listings-div">
-      <FilterBar />
-      <FilterForm
+      <FilterBar
         start_date={props.start_date}
         end_date={props.end_date}
         location={props.location}

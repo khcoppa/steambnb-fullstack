@@ -4,13 +4,22 @@ import { withRouter } from 'react-router-dom';
 
 import MarkerManager from '../../util/marker_manager';
 
-const mapOptions = {
-  center: { lat: 39.8283, lng: -98.5795 },
-  zoom: 3
-};
-
 class ListingMap extends React.Component {
   componentDidMount() {
+    let mapOptions = {
+      center: { lat: 39.8283, lng: -98.5795 },
+      zoom: 3
+    };
+
+    const singleListing = this.props.listings.length === 1 ? true : false;
+    if (singleListing) {
+      const lat = this.props.listings[0].lat;
+      const lng = this.props.listings[0].lng;
+      mapOptions = {
+        center: { lat: lat, lng: lng},
+        zoom: 10
+      }
+    }
     this.map = new google.maps.Map(this.mapNode, mapOptions);
     this.MarkerManager = new MarkerManager(this.map, this.handleMarkerClick.bind(this));
     this.registerListeners();
@@ -18,6 +27,17 @@ class ListingMap extends React.Component {
   }
 
   componentDidUpdate() {
+    // const singleListing = this.props.listings.length === 1 ? true : false;
+    // if (singleListing) {
+    //   const lat = this.props.listings[0].lat;
+    //   const lng = this.props.listings[0].lng;
+    //   const mapOptions = {
+    //     center: { lat: lat, lng: lng},
+    //     zoom: 10
+    //   }
+    //   this.map = new google.maps.Map(this.mapNode, mapOptions);
+    //   this.MarkerManager = new MarkerManager(this.map, this.handleMarkerClick.bind(this));
+    // }
     this.MarkerManager.updateMarkers(this.props.listings);
   }
 
