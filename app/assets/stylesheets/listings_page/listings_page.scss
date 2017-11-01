@@ -1,17 +1,26 @@
-#listings-div {
-  width: 100%;
-  height: inherit;
+#listing-div {
+  display: flex;
+  justify-content: space-between;
 }
 
-.map {
-  float: right;
-  height: 100vh;
+.map-wrapper {
+  position: fixed;
+  right: 0;
+  margin-top: 145px;
+  height: auto;
   width: 34%;
 }
 
+.map {
+  height: 100vh;
+  width: 100%;
+}
+
 .listing-index {
+  margin-top: 145px;
   float: left;
   width: 66%;
+  overflow: scroll;
 }
 
 .listing-index ul {
@@ -20,8 +29,5 @@
   column-gap: 20px;
   padding-left: 25px;
   padding-right: 25px;
-}
-
-.listing-index ul li {
-  cursor: pointer;
+  margin-top: 30px;
 }

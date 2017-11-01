@@ -48,16 +48,22 @@ class NavbarSearch extends React.Component {
     if (this.props.currentUser) {
       return (
         <div className="navbar-search">
-          <div className="logo-div">
-            <Link to={'/'}><i id="logo" className="icon fa fa-tint"></i></Link>
-          </div>
+          <div className="right-search">
+            <div className="logo-search">
+              <Link to={'/'}><i id="logo" className="icon fa fa-tint"></i></Link>
+            </div>
 
-          <div className='search-bar'>
-            <i className="fa fa-search"></i>
-            <input
-              onChange={this.handleInput}
-              value={this.state.searchVal}
-              placeholder='Anywhere'/>
+            <div className='search-bar'>
+              <div className='search-icon'>
+                <i className="fa fa-search"></i>
+              </div>
+              <div className='search-input'>
+                <input
+                  onChange={this.handleInput}
+                  value={this.state.searchVal}
+                  placeholder='Anywhere'/>
+              </div>
+            </div>
           </div>
 
           <div className="user-logout">

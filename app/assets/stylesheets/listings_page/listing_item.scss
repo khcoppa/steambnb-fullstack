@@ -1,39 +1,45 @@
-.listing-index a {
+.listing-item {
+  width: 100%;
+  cursor: pointer;
   font-family: 'Poppins', sans-serif;
+  margin-bottom: 20px;
+}
+
+.listing-item a {
   text-decoration: none;
 }
 
-.listing-index ul {
-  margin-top: 30px;
+.listing-item img {
+  border-radius: 1px;
+  width: 100%;
+  height: 240px;
 }
 
-.listing-item img {
-  border-radius: 5px;
-  width: 100%;
-  height: 250px;
+.listing-item h4 {
+  color: #82070f;
+  font-size: 12px;
+  margin: 5px 0 0 0;
+  font-weight: bolder;
+  text-transform: uppercase;
 }
 
 .listing-item h3 {
   color: #505050;
   font-size: 17px;
-  margin: 3px 0 0 0;
+  margin: 5px 0 0 0;
   font-weight: 600;
   letter-spacing: 1px;
 }
 
-.listing-item h4 {
-  color: black;
-  font-size: 12px;
-  margin: 3px 0 0 0;
-  font-weight: 400;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
-
 .listing-item p {
-  margin-top: 1px;
+  margin: 5px 0 0 0;
   color: #656565;
   font-size: 14px;
   font-weight: 300;
-  margin-bottom: 70px;
+}
+
+.listing-item h5 {
+  font-size: 10px;
+  margin: 7px 0 0 0;
+  color: #118489;
 }

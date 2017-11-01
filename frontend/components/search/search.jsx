@@ -17,10 +17,12 @@ const Search = (props) => {
       <ListingIndex
         listings={props.listings}
       />
-      <ListingMap
-        listings={props.listings}
-        updateFilter={props.updateFilter}
-      />
+      <div className="map-wrapper">
+        <ListingMap
+          listings={props.listings}
+          updateFilter={props.updateFilter}
+        />
+      </div>
     </div>
   );
 };

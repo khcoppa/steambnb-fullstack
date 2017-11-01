@@ -3,29 +3,7 @@
   height: 63px;
   border-top: 1px solid #d9d9d9;
   border-bottom: 1px solid #d9d9d9;
-  overflow: hidden;
-}
-
-.filter-buttons button {
-  font-size: 14px;
-  font-family: 'Poppins', sans-serif;
-  font-weight: 300;
-  letter-spacing: 1px;
-  background: none;
-  border: 1px solid #d9d9d9;
-  border-radius: 5px;
-  color: #505050;
-  padding: 6px;
-  margin-left: 10px;
-}
-
-button.dates {
-  margin-left: 0;
-}
-
-.filter-buttons ul {
-  display: flex;
-  align-items: center;
-  list-style: none;
-  padding-left: 20px;
+  margin-top: 80px;
+  position: fixed;
+  background-color: white;
 }
