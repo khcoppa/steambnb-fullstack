@@ -10,7 +10,7 @@ import {
 
 import NavbarHomeContainer from './navbar/navbar_home_container';
 import NavbarSearchContainer from './navbar/navbar_search_container';
-import Homepage from './homepage/homepage';
+import HomepageContainer from './homepage/homepage_container';
 import loggedIn from './blank/loggedIn';
 import loggedOut from './blank/loggedOut';
 import SearchContainer from './search/search_container';
@@ -26,7 +26,7 @@ const App = () => (
       </Switch>
     </header>
     <Switch>
-      <Route exact path="/" component={Homepage} />
+      <Route exact path="/" component={HomepageContainer} />
 
       <Route path="/listings/:listingId/reviews" component={ReviewFormContainer} />
       <Route path="/listings/:listingId" component={ListingShowContainer} />
