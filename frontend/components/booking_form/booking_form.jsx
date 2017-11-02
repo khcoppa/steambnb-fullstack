@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom';
 class BookingForm extends React.Component {
   constructor(props){
     super(props);
-    debugger
     this.state = {
       listing_id: this.props.listingId,
       booker_id: this.props.userId,
@@ -20,7 +19,6 @@ class BookingForm extends React.Component {
    }
    navigateToListingIndex() {
      const url = '/listings';
-     debugger
      this.props.history.push(url);
    }
    handleSubmit(e) {

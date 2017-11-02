@@ -15,7 +15,6 @@ class ListingShow extends React.Component {
   }
   render() {
    if (this.props.listing && this.props.user) {
-     debugger
      return(
         <div id="listing-show-page">
           <div className="listing-img">

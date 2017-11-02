@@ -21,6 +21,7 @@ const Search = (props) => {
         <ListingMap
           listings={props.listings}
           updateFilter={props.updateFilter}
+          singleListing={false}
         />
       </div>
     </div>

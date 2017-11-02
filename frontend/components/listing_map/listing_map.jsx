@@ -10,9 +10,7 @@ class ListingMap extends React.Component {
       center: { lat: 39.8283, lng: -98.5795 },
       zoom: 3
     };
-
-    const singleListing = this.props.listings.length === 1 ? true : false;
-    if (singleListing) {
+    if (this.props.singleListing) {
       const lat = this.props.listings[0].lat;
       const lng = this.props.listings[0].lng;
       mapOptions = {
@@ -60,7 +58,7 @@ class ListingMap extends React.Component {
   }
 
   render() {
-    if (this.props.listings.length === 1) {
+    if (this.props.singleListing) {
       return (
         <div className="single-map" ref={map => this.mapNode = map}>
           Map

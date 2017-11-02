@@ -71,6 +71,7 @@ class ListingDetails extends React.Component {
           <ListingMap
             listings={listingArr}
             updateFilter={this.props.updateFilter}
+            singleListing={true}
           />
         </div>
       );
