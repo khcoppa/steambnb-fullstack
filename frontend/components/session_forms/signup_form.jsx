@@ -20,10 +20,17 @@ class SignupForm extends Component {
     return e => this.setState({[field]: e.currentTarget.value});
   }
 
+  navigateToListings() {
+    debugger
+    this.props.history.push('/listings');
+  }
+
   handleSubmit(e) {
     e.preventDefault();
     const user = this.state;
-    this.props.signup({user});
+    if (this.props.signup({user})) {
+      this.navigateToListings();
+    }
   }
 
   render() {

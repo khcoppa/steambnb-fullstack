@@ -7,12 +7,12 @@ import {
   Link,
   HashRouter
 } from 'react-router-dom';
+import { ProtectedRoute } from '../util/route_util';
 
 import NavbarHomeContainer from './navbar/navbar_home_container';
 import NavbarSearchContainer from './navbar/navbar_search_container';
 import HomepageContainer from './homepage/homepage_container';
-import loggedIn from './blank/loggedIn';
-import loggedOut from './blank/loggedOut';
+import HomepageLogin from './homepage/homepage_login';
 import SearchContainer from './search/search_container';
 import ListingShowContainer from './listing_show/listing_show_container';
 import ReviewFormContainer from './review_form/review_form_container';
@@ -27,14 +27,11 @@ const App = () => (
     </header>
     <Switch>
       <Route exact path="/" component={HomepageContainer} />
+      <Route exact path="/login" component={HomepageLogin} />
 
-      <Route path="/listings/:listingId/reviews" component={ReviewFormContainer} />
-      <Route path="/listings/:listingId" component={ListingShowContainer} />
-      <Route path="/listings" component={SearchContainer} />
-
-
-      <Route exact path="/loggedIn" component={loggedIn} />
-      <Route exact path="/loggedOut" component={loggedOut} />
+      <ProtectedRoute path="/listings/:listingId/reviews" component={ReviewFormContainer} />
+      <ProtectedRoute path="/listings/:listingId" component={ListingShowContainer} />
+      <ProtectedRoute path="/listings" component={SearchContainer} />
     </Switch>
   </div>
 );
