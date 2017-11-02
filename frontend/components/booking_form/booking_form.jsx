@@ -34,30 +34,53 @@ class BookingForm extends React.Component {
      this.props.createBooking(booking).then(this.navigateToListingIndex);
    }
   render() {
+    const options = [];
+    for (let i=0; i < this.props.listing.guests; i++) {
+      if (i === 0) {
+        options.push(<option value={i}>{i+1} guest</option>)
+      } else {
+        options.push(<option value={i}>{i+1} guests</option>)
+      }
+    }
     return(
       <div className="booking-form">
-        <h3>From ${this.props.listing.price} per night</h3>
+        <div className="form-header">
+          <h2>${this.props.listing.price}</h2>
+          <h3>per night</h3>
+
+        </div>
+
         {this.renderErrors()}
+
         <form onSubmit={this.handleSubmit}>
-          <div className="check-in">
-            <label>Check In</label>
-              <br />
-              <input
-                type="date"
-                value={this.state.start_date}
-                onChange={this.update('start_date')}
-              />
+          <div className="inputs">
+            <div className="check-in">
+              <label>Check In</label>
+                <br />
+                <input
+                  type="date"
+                  value={this.state.start_date}
+                  onChange={this.update('start_date')}
+                />
+            </div>
+            <div className="check-out">
+              <label>Check Out</label>
+                <br />
+                <input
+                  type="date"
+                  value={this.state.end_date}
+                  onChange={this.update('end_date')}
+                />
+            </div>
+            <div className="guests">
+              <label>Guests</label>
+                <br />
+                <select name="guests">
+                  {options}
+                </select>
+            </div>
           </div>
-          <div className="check-out">
-            <label>Check Out</label>
-              <br />
-              <input
-                type="date"
-                value={this.state.end_date}
-                onChange={this.update('end_date')}
-              />
-          </div>
-          <button id="request-button" type="submit">Book</button>
+          <button id="request-button" type="submit">Request to Book</button>
         </form>
       </div>
     );

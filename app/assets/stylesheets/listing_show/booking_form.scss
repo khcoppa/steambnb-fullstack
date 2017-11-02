@@ -2,47 +2,89 @@
   font-size: 14px;
   color: #404040;
   font-weight: 300;
-  padding: 10px;
+  padding: 20px 25px;
   margin-left: 55%;
   width: 25%;
   height: 350px;
   border: 1px solid #d9d9d9;
-}
+  margin-top: 20px;
 
-
-.booking-form {
-  div {
-    display: inline-block;
-    margin-top: 10px;
-    width: 50%;
-    margin-bottom: 50px;
-  }
-  div label {
-    display: block;
-    font-weight: 400;
-    color: #404040;
-    letter-spacing: 1px;
-  }
-  form {
-    padding-bottom: 50px;
+  .form-header {
+    display: flex;
+    padding-bottom: 30px;
     border-bottom: 1px solid #d9d9d9;
+    h2 {
+      margin: 0;
+      color: #454545;
+      font-size: 24px;
+    }
+    h3 {
+      margin: 8px 0 0 5px;
+      color: #606060;
+      font-size: 14px;
+      font-weight: 300;
+    }
   }
-  input {
-    font-family: 'Poppins', sans-serif;
-    font-size: 14px;
-    color: #757575;
-    border: 1px solid #d9d9d9;
-    height: 40px;
+
+  .inputs {
     width: 100%;
-    padding-left: 5px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+
+    div {
+      width: 50%;
+      display: inline-block;
+    }
+
+    label {
+      font-size: 11px;
+      letter-spacing: 1px;
+    }
+
+    input {
+      margin-top: 5px;
+      font-family: 'Poppins', sans-serif;
+      font-size: 12px;
+      letter-spacing: 1px;
+      color: #757575;
+      border: 1px solid #d9d9d9;
+      height: 35px;
+      width: 100%;
+      padding-left: 5px;
+    }
+    input:enabled {
+      outline: none;
+    }
+
+    .guests {
+      width: 100%;
+      margin-top: 10px;
+    }
+    select {
+      margin-top: 5px;
+      font-family: 'Poppins', sans-serif;
+      font-size: 14px;
+      letter-spacing: 1px;
+      color: #505050;
+      border: 1px solid #d9d9d9;
+      height: 40px;
+      width: 100%;
+      padding-left: 5px;
+      background-color: #fefefe;
+      border-radius: 0;
+    }
+    select:enabled {
+      outline: none;
+    }
   }
+
   button {
     background-color: #ff6666;
     color: white;
     display: block;
     margin: 0 auto;
-    width: 97%;
-    height: 40px;
+    width: 100%;
+    height: 50px;
     font-size: 14px;
     font-weight: 500;
     border: none;
