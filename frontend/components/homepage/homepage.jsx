@@ -30,7 +30,7 @@ class Homepage extends React.Component {
     return (
       <div className="home-content">
         <h1>Steambnb</h1>
-        <p>Book experiences<br />at the worlds best saunas.</p>
+        <p>Book time to relax<br /> at premier spas and saunas.</p>
 
         <div className='search-bar-home'>
           <div className='search-icon-home'>

@@ -71,10 +71,32 @@
   height: 100%;
 
   ul {
+    margin-top: 30px;
     display: flex;
     align-items: center;
     list-style: none;
     padding: 0;
+  }
+
+  li:first-of-type {
+    padding-right: 15px;
+  }
+
+  a {
+    text-decoration: none;
+    color: #454545;
+  }
+  a:hover {
+    cursor: pointer;
+  }
+
+  button {
+    border-bottom: 2px solid white;
+  }
+
+  button:hover {
+    border-color: #505050;
+    cursor: pointer;
   }
 }
 // .search-bar {
@@ -106,25 +128,4 @@
 // .user-logout button:hover {
 //   border-color: #505050;
 //   cursor: pointer;
-// }
-//
-// .search-bar i {
-//   font-size: 24px;
-//   color: #606060;
-//   margin: 0 auto;
-//   margin-top: 10px;
-//   margin-left: 20px;
-// }
-//
-// .search-bar input {
-//   font-weight: 300;
-//   font-size: 20px;
-//   border: none;
-//   height: 80%;
-//   margin: 0 auto;
-//   margin-left: 20px;
-//   width: 50%;
-// }
-// input:enabled {
-//   outline: none;
 // }

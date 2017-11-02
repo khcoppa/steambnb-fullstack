@@ -29,6 +29,7 @@ class SignupForm extends Component {
   render() {
     return(
       <div className="form-container">
+        <h2><span>Sign Up</span></h2>
         {this.renderErrors()}
         <form onSubmit={this.handleSubmit}>
           <div className="username-input">
@@ -37,6 +38,9 @@ class SignupForm extends Component {
               placeholder="Email Address"
               value={this.state.username}
               onChange={this.update('username')}/>
+            <div>
+              <i className="fa fa-envelope-o"></i>
+            </div>
           </div><br />
           <div className="password-input">
             <input className="form-input"
@@ -45,8 +49,14 @@ class SignupForm extends Component {
               value={this.state.password}
               onChange={this.update('password')}
               className="password-input"/>
+            <div>
+              <i className="fa fa-lock"></i>
+            </div>
           </div><br />
-          <button id="submit-button">Sign Up</button>
+          <button id="submit-button">Sign up</button>
+        </form>
+        <form className="demo" onSubmit={this.demoLogin}>
+          <button id="demo-button">Demo Signup</button>
         </form>
       </div>
     );
