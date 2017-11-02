@@ -19,8 +19,8 @@ class BookingForm extends React.Component {
    }
 
    renderErrors() {
-      if (this.props.errors.responseJSON) {
-        return (<p>{this.props.errors.responseJSON}</p>);
+      if (this.props.errors) {
+        return (<p>{this.props.errors}</p>);
       }
     }
 
@@ -31,17 +31,13 @@ class BookingForm extends React.Component {
    handleSubmit(e) {
      e.preventDefault();
      const booking = this.state;
-     this.props.createBooking(booking);
-     debugger
-     if (this.props.errors.length === 0) {
-       this.navigateToListingIndex();
-     }
+     this.props.createBooking(booking).then(this.navigateToListingIndex);
    }
   render() {
     return(
       <div className="booking-form">
         <h3>From ${this.props.listing.price} per night</h3>
-        <h4>{this.renderErrors()}</h4>
+        {this.renderErrors()}
         <form onSubmit={this.handleSubmit}>
           <div className="check-in">
             <label>Check In</label>

@@ -16,6 +16,7 @@ class NavbarSearch extends React.Component {
       location_search: ''
     }
     this.handleSubmit = this.handleSubmit.bind(this);
+    this.handleLogout = this.handleLogout.bind(this);
     // this.update = this.update.bind(this);
   }
 

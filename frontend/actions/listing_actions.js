@@ -45,5 +45,5 @@ export const createReview = review => dispatch => (
 export const createBooking = booking => dispatch => (
   ListingAPIUtil.createBooking(booking)
     .then(booking => dispatch(receiveBooking(booking)),
-    (errors) => dispatch(receiveErrors(errors)))
+    (errors) => dispatch(receiveErrors(errors.responseJSON)))
 );
