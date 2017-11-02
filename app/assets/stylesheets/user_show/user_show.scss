@@ -1,0 +1,36 @@
+.booking-list {
+  margin-top: 80px;
+  margin-left: 50px;
+
+  h1 {
+    font-family: 'Poppins', sans-serif;
+    color: #505050;
+    font-size: 30px;
+    margin-top: 0;
+    margin-left: 25px;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+    font-weight: 400;
+  }
+  ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+    padding-right: 0;
+    margin: 0;
+  }
+  .listing-item {
+    cursor: default;
+    width: 400px;
+  }
+  .listing-item p {
+    margin-bottom: 5px;
+  }
+}
+
+.listing-item a {
+  color: #118489;
+  text-decoration: none;
+  cursor: pointer;
+}

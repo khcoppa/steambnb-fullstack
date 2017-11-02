@@ -16,6 +16,7 @@ import HomepageLogin from './homepage/homepage_login';
 import SearchContainer from './search/search_container';
 import ListingShowContainer from './listing_show/listing_show_container';
 import ReviewFormContainer from './review_form/review_form_container';
+import UserShowContainer from './user_show/user_show_container';
 
 const App = () => (
   <div id="app">
@@ -29,6 +30,7 @@ const App = () => (
       <Route exact path="/" component={HomepageContainer} />
       <Route exact path="/login" component={HomepageLogin} />
 
+      <ProtectedRoute path="/user/:userId" component={UserShowContainer} />
       <ProtectedRoute path="/listings/:listingId/reviews" component={ReviewFormContainer} />
       <ProtectedRoute path="/listings/:listingId" component={ListingShowContainer} />
       <ProtectedRoute path="/listings" component={SearchContainer} />

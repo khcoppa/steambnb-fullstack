@@ -64,7 +64,6 @@ class ListingDetails extends React.Component {
             <a name="reviews"></a>
             <h2>{this.props.listing.reviews.length} Reviews {averageRating(this.props.listing.reviews)} stars</h2>
             {reviewList(this.props.listing.reviews)}
-            <Link to={`/listings/${this.props.listing.id}/reviews`}>Write A Review</Link>
           </div>
 
           <a name="location"></a>
