@@ -37,7 +37,12 @@ class ListingDetails extends React.Component {
 
   render() {
     const listingArr = [this.props.listing];
+    const stars = [];
+    for (let i=0; i < averageRating(this.props.listing.reviews); i++) {
+      stars.push(<i className="fa fa-star"></i>);
+    }
     if (this.props.listing) {
+
       return (
         <div className="listing-information">
           <div className="anchors">
@@ -62,7 +67,7 @@ class ListingDetails extends React.Component {
 
           <div className="reviews">
             <a name="reviews"></a>
-            <h2>{this.props.listing.reviews.length} Reviews {averageRating(this.props.listing.reviews)} stars</h2>
+            <h2>{this.props.listing.reviews.length} Reviews {stars}</h2>
             {reviewList(this.props.listing.reviews)}
           </div>
 

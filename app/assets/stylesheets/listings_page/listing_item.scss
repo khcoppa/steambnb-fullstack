@@ -40,7 +40,13 @@
 }
 
 .listing-item h5 {
-  font-size: 10px;
   margin: 7px 0 0 0;
-  color: #118489;
+  color: #454545;
+  font-size: 10px;
+  font-weight: 300;
+
+  i {
+    color: #01b3ba;
+    font-size: 10px;
+  }
 }

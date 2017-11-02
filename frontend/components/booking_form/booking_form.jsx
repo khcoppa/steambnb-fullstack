@@ -1,6 +1,17 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
+const averageRating = (reviews = []) => {
+  let ratings = 0;
+  let count = 0;
+  reviews.forEach(review => {
+    ratings += review.rating;
+    count += 1;
+  });
+  let average = (ratings/count);
+  return average;
+};
+
 class BookingForm extends React.Component {
   constructor(props){
     super(props);
@@ -35,6 +46,10 @@ class BookingForm extends React.Component {
    }
   render() {
     const options = [];
+    const stars = [];
+    for (let i=0; i < averageRating(this.props.listing.reviews); i++) {
+      stars.push(<i className="fa fa-star"></i>);
+    }
     for (let i=0; i < this.props.listing.guests; i++) {
       if (i === 0) {
         options.push(<option value={i}>{i+1} guest</option>)
@@ -47,7 +62,7 @@ class BookingForm extends React.Component {
         <div className="form-header">
           <h2>${this.props.listing.price}</h2>
           <h3>per night</h3>
-
+          <h4 id="stars">{stars} ({this.props.listing.reviews.length})</h4>
         </div>
 
         {this.renderErrors()}
