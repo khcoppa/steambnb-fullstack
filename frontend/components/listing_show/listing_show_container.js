@@ -10,7 +10,8 @@ const mapStateToProps = (state, ownProps) => {
   return {
     listingId,
     listing,
-    user
+    user,
+    errors: state.errors.entities
   };
 };
 

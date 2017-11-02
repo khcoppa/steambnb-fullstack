@@ -36,6 +36,7 @@ class ListingShow extends React.Component {
             createBooking={this.props.createBooking}
             listing={this.props.listing}
             history={this.props.history}
+            errors={this.props.errors}
           />
         </div>
       );

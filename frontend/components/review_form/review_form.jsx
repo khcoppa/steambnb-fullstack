@@ -48,7 +48,6 @@ class ReviewForm extends React.Component {
           </div>
 
           <form onSubmit={this.handleSubmit}>
-
             <div className="rating">
               <h2>How was your stay at {this.props.listing.title}?</h2>
               <div className="stars">
