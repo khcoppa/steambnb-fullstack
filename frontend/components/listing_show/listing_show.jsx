@@ -15,6 +15,7 @@ class ListingShow extends React.Component {
   }
   render() {
    if (this.props.listing && this.props.user) {
+     debugger
      return(
         <div id="listing-show-page">
           <div className="listing-img">
@@ -25,6 +26,8 @@ class ListingShow extends React.Component {
               listing={this.props.listing}
               listingId={this.props.listingId}
               fetchListing={this.props.fetchListing}
+              updateFilter={this.props.updateFilter}
+              history={this.props.history}
             />
           </div>
 
@@ -33,6 +36,7 @@ class ListingShow extends React.Component {
             listingId={this.props.listingId}
             createBooking={this.props.createBooking}
             listing={this.props.listing}
+            history={this.props.history}
           />
         </div>
       );

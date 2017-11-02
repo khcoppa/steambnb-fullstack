@@ -13,35 +13,24 @@ class NavbarSearch extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      searchVal: ''
+      location_search: ''
     }
-    this.selectListing = this.selectListing.bind(this);
-    this.handleInput = this.handleInput.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
+    // this.update = this.update.bind(this);
   }
 
-  handleInput(e) {
-    this.setState({searchVal: e.currentTarget.value});
+  update(field) {
+    return e => this.setState({[field]: e.currentTarget.value});
+  }
+
+  handleSubmit(e) {
+    e.preventDefault();
+    this.props.updateFilter('location', this.state.location_search);
+    this.setState({['location_search']: ''});
   }
 
   handleLogout() {
     this.props.logout();
-  }
-
-  matches() {
-    const matches = [];
-    this.props.listings.forEach(listing => {
-      let title = listing.title;
-      let subTitle = title.slice(0, this.state.searchVal.length);
-      if (subTitle.toLowerCase() === this.state.searchVal.toLowerCase()) {
-        matches.push(title);
-      }
-    });
-    return matches;
-  }
-
-  selectListing(e) {
-    let title = e.currentTarget.innerText;
-    this.setState({ searchVal: title });
   }
 
   render() {
@@ -58,10 +47,14 @@ class NavbarSearch extends React.Component {
                 <i className="fa fa-search"></i>
               </div>
               <div className='search-input'>
-                <input
-                  onChange={this.handleInput}
-                  value={this.state.searchVal}
-                  placeholder='Anywhere'/>
+                <form onSubmit={this.handleSubmit}>
+                  <input
+                    type="text"
+                    value={this.state.location_search}
+                    onChange={this.update('location_search')}
+                    placeholder="Anywhere"
+                  />
+                </form>
               </div>
             </div>
           </div>

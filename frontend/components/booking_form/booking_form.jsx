@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 class BookingForm extends React.Component {
   constructor(props){
     super(props);
+    debugger
     this.state = {
       listing_id: this.props.listingId,
       booker_id: this.props.userId,
@@ -11,15 +12,22 @@ class BookingForm extends React.Component {
       end_date: ""
     };
     this.handleSubmit = this.handleSubmit.bind(this);
+    this.navigateToListingIndex = this.navigateToListingIndex.bind(this);
   }
 
    update(field) {
      return e => this.setState({[field]: e.currentTarget.value});
    }
+   navigateToListingIndex() {
+     const url = '/listings';
+     debugger
+     this.props.history.push(url);
+   }
    handleSubmit(e) {
      e.preventDefault();
      const booking = this.state;
      this.props.createBooking(booking);
+     this.navigateToListingIndex();
    }
   render() {
     return(
@@ -44,7 +52,7 @@ class BookingForm extends React.Component {
                 onChange={this.update('end_date')}
               />
           </div>
-          <button id="request-button">Book</button>
+          <button id="request-button" type="submit">Book</button>
         </form>
       </div>
     );

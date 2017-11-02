@@ -19,6 +19,11 @@ class ReviewForm extends React.Component {
     }
   }
 
+  navigateToListingShow() {
+    const url = `/listings/${this.state.listing_id}`;
+    this.props.history.push(url);
+  }
+
    update(field) {
      return e => this.setState({[field]: e.currentTarget.value});
    }
@@ -27,6 +32,7 @@ class ReviewForm extends React.Component {
      let review = this.state;
      review.rating = parseInt(review.rating);
      this.props.createReview(review);
+     this.navigateToListingShow();
    }
    //star review form was learned from A Pen by Neil Pomerleau
     //https://codepen.io/neilpomerleau/pen/wzxzQr

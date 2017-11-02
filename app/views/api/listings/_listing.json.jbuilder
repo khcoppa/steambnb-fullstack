@@ -1,5 +1,5 @@
 json.extract! listing, :id, :title, :image_url, :price, :location, :guests,
-  :bedrooms, :beds, :bath, :lat, :lng
+  :bedrooms, :beds, :bath, :lat, :lng, :average_rating
 
 json.reviews do
   json.partial! '/api/reviews/review', collection: listing.reviews, as: :review

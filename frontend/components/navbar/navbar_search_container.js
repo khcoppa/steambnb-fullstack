@@ -7,7 +7,7 @@ const mapStateToProps = ({ session, entities, ui }) => {
   return {
     currentUser: session.currentUser,
     listings: entities.listings,
-    location: ui.filters.location
+    location_coords: ui.filters.location
   };
 };
 

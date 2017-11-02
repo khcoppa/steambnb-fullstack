@@ -1,5 +1,6 @@
 import { connect } from 'react-redux';
 import { fetchListing, createBooking } from '../../actions/listing_actions';
+import { updateFilter } from '../../actions/filter_actions';
 import ListingShow from './listing_show';
 
 const mapStateToProps = (state, ownProps) => {
@@ -15,7 +16,8 @@ const mapStateToProps = (state, ownProps) => {
 
 const mapDispatchToProps = dispatch => ({
   fetchListing: id => dispatch(fetchListing(id)),
-  createBooking: booking => dispatch(createBooking(booking))
+  createBooking: booking => dispatch(createBooking(booking)),
+  updateFilter: (filter, value) => dispatch(updateFilter(filter, value))
 });
 
 export default connect(

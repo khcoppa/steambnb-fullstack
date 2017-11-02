@@ -14,7 +14,7 @@ class ListingIndexItem extends React.Component {
           <h4>Sauna {this.props.listing.beds} beds</h4>
           <h3>{this.props.listing.title}</h3>
           <p>From ${this.props.listing.price} per night</p>
-          <h5>Average Rating: </h5>
+          <h5>{Math.round(this.props.listing.average_rating * 10) / 10} star listing</h5>
         </Link>
       </li>
     );
