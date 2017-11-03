@@ -33,7 +33,7 @@ const App = () => (
       <ProtectedRoute path="/user/:userId" component={UserShowContainer} />
       <ProtectedRoute path="/listings/:listingId/reviews" component={ReviewFormContainer} />
       <ProtectedRoute path="/listings/:listingId" component={ListingShowContainer} />
-      <ProtectedRoute path="/listings" component={SearchContainer} />
+      <Route path="/listings" component={SearchContainer} />
     </Switch>
   </div>
 );

@@ -18,8 +18,9 @@ Here is a link to the live site : https://steambnb-clone.herokuapp.com/#/
 
 ## Features
   * User Authentication
+    * ![login](https://user-images.githubusercontent.com/12862833/32382972-1ce62b18-c08d-11e7-9e61-0fa568437153.png)
   * Listings     
-    * ![listingsindex](https://user-images.githubusercontent.com/12862833/32382526-e0338fae-c08b-11e7-9b3c-8633350cfa2e.png)
+    * ![listingsindex](https://user-images.githubusercontent.com/12862833/32382913-ea8d2a40-c08c-11e7-9b9c-e074c16fe1a6.png)
   * Bookings
     * ![listingsshow](https://user-images.githubusercontent.com/12862833/32382593-129a1260-c08c-11e7-8d3f-6cce6ee0c7f2.png)
   * Reviews
