@@ -19,12 +19,7 @@ Here is a link to the live site : https://steambnb-clone.herokuapp.com/#/
 # Features
   * User Authentication
   * Listings
-    * <img align="center" src="https://github.com/khcoppa/steambnb-fullstack/tree/master/app/assets/images/listingsIndex.png"
-    width="600">
   * Bookings
-    * Users can book Listings
-    <img align="center" src="https://github.com/khcoppa/steambnb-fullstack/tree/master/app/assets/images/listingsShow.png"
-    width="600">
   * Reviews
     * Users can review Listings that they have successfully booked.
   * Search listings by Location, Availability, and Google Maps
