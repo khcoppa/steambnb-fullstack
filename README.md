@@ -6,17 +6,17 @@ Steambnb
 ========
 Steambnb is a webapp inspired by airbnb that allows users to search, book and review luxurious spas around the world.
 
-# Live site
+## Live site
 Here is a link to the live site : https://steambnb-clone.herokuapp.com/#/
 
-# Built with
+## Built with
   * Backend : Ruby on Rails
   * Frontend: React/Redux
   * Database: PostgreSQL
   * jQuery - Ajax
   * Google Maps API
 
-# Features
+## Features
   * User Authentication
   * Listings
   * Bookings
@@ -58,5 +58,5 @@ Here is a link to the live site : https://steambnb-clone.herokuapp.com/#/
     render :index
     ```
 
-# Future Features
+## Future Features
   * Messaging
