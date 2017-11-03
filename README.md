@@ -1,5 +1,5 @@
 <a href="https://steambnb-clone.herokuapp.com/#/">
-  <img src="https://vignette1.wikia.nocookie.net/clubpenguin/images/a/a7/Water_Droplet_Pin.PNG/revision/latest?cb=20150314141114" title="logo" align="left" height="86" />
+  <img src="https://vignette1.wikia.nocookie.net/clubpenguin/images/a/a7/Water_Droplet_Pin.PNG/revision/latest?cb=20150314141114" title="logo" align="left" height="80" />
 </a>
 
 Steambnb
