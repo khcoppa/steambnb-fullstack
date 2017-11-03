@@ -1,5 +1,5 @@
 <a href="https://steambnb-clone.herokuapp.com/#/">
-  <img src="https://vignette1.wikia.nocookie.net/clubpenguin/images/a/a7/Water_Droplet_Pin.PNG/revision/latest?cb=20150314141114" title="logo" align="right" height="90" />
+  <img src="https://vignette1.wikia.nocookie.net/clubpenguin/images/a/a7/Water_Droplet_Pin.PNG/revision/latest?cb=20150314141114" title="logo" align="left" height="86" />
 </a>
 
 Steambnb
@@ -18,8 +18,10 @@ Here is a link to the live site : https://steambnb-clone.herokuapp.com/#/
 
 ## Features
   * User Authentication
-  * Listings
+  * Listings     
+    * ![listingsindex](https://user-images.githubusercontent.com/12862833/32382526-e0338fae-c08b-11e7-9b3c-8633350cfa2e.png)
   * Bookings
+    * ![listingsshow](https://user-images.githubusercontent.com/12862833/32382593-129a1260-c08c-11e7-8d3f-6cce6ee0c7f2.png)
   * Reviews
     * Users can review Listings that they have successfully booked.
   * Search listings by Location, Availability, and Google Maps
