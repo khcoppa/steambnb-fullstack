@@ -63,7 +63,7 @@ class NavbarSearch extends React.Component {
           <div className="user-logout">
             <ul>
               <li>
-                <Link to={`/user/${this.props.currentUser.id}`}>{this.props.currentUser.username}</Link>
+                <Link to={`/user/${this.props.currentUser.id}`}><img src={this.props.currentUser.image_url} /></Link>
               </li>
 
               <li>

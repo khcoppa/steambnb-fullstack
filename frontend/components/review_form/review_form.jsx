@@ -53,7 +53,7 @@ class ReviewForm extends React.Component {
           <form onSubmit={this.handleSubmit}>
             <div className="rating">
               <h2>Rate your stay at {this.props.listing.title}</h2>
-              <input list="ratings" onChange={this.update('rating')}/>
+              <input list="ratings" onChange={this.update('rating')} placeholder="Select a Rating"/>
               <datalist id="ratings">
                 <option value="5">My stay was amazing!</option>
                 <option value="4">My stay was good!</option>

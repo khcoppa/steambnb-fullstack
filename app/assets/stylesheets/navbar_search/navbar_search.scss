@@ -71,7 +71,7 @@
   height: 100%;
 
   ul {
-    margin-top: 30px;
+    margin-top: 15px;
     display: flex;
     align-items: center;
     list-style: none;
@@ -80,6 +80,13 @@
 
   li:first-of-type {
     padding-right: 15px;
+  }
+
+  img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    border: 1px solid #FF5A5F;
   }
 
   a {

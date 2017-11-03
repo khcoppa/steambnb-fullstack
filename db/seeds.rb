@@ -13,27 +13,32 @@ Booking.delete_all
 User.create!(
   id: 1,
   username: 'Guest',
-  password: 'password'
+  password: 'password',
+  image_url: 'https://upload.wikimedia.org/wikipedia/en/7/75/Koopa_Troopa_3D_Land.png'
 )
 User.create!(
   id: 2,
   username: 'Koopa',
-  password: 'troopa'
+  password: 'troopa',
+  image_url: 'https://upload.wikimedia.org/wikipedia/en/7/75/Koopa_Troopa_3D_Land.png'
 )
 User.create!(
   id: 3,
   username: 'Nicole',
-  password: 'password'
+  password: 'password',
+  image_url: 'https://upload.wikimedia.org/wikipedia/en/7/75/Koopa_Troopa_3D_Land.png'
 )
 User.create!(
   id: 4,
   username: 'Kevin',
-  password: 'password'
+  password: 'password',
+  image_url: 'https://upload.wikimedia.org/wikipedia/en/7/75/Koopa_Troopa_3D_Land.png'
 )
 User.create!(
   id: 5,
   username: 'Eva',
-  password: 'password'
+  password: 'password',
+  image_url: 'https://upload.wikimedia.org/wikipedia/en/7/75/Koopa_Troopa_3D_Land.png'
 )
 User.create!(
   id: 6,
@@ -43,7 +48,8 @@ User.create!(
 User.create!(
   id: 7,
   username: 'Lauren',
-  password: 'password'
+  password: 'password',
+  image_url: 'https://upload.wikimedia.org/wikipedia/en/7/75/Koopa_Troopa_3D_Land.png'
 )
 
 Listing.create!(
