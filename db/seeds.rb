@@ -68,9 +68,9 @@ Listing.create!(
 )
 Listing.create!(
   id: 2,
-  title: 'The Peninsula Spa',
+  title: 'Sauna with a View',
   host_id: 1,
-  image_url: 'https://media.cntraveler.com/photos/568e811a67dc82253d9f9351/master/w_1440,c_limit/rca-spas-peninsula-new-york-cr-courtesy.jpg',
+  image_url: 'https://www.bergkristall.de/media/49103/bergkristall-sep14-s9a3064-web-1481025.jpg',
   price: 200,
   location: 'New York City, New York',
   guests: 2,
@@ -180,9 +180,9 @@ Listing.create!(
 )
 Listing.create!(
   id: 10,
-  title: 'Sauna with a View',
+  title: 'The Peninsula Spa',
   host_id: 1,
-  image_url: 'https://www.bergkristall.de/media/49103/bergkristall-sep14-s9a3064-web-1481025.jpg',
+  image_url: 'https://media.cntraveler.com/photos/568e811a67dc82253d9f9351/master/w_1440,c_limit/rca-spas-peninsula-new-york-cr-courtesy.jpg',
   price: 400,
   location: 'San Francisco, California',
   guests: 4,

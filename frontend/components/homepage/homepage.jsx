@@ -48,8 +48,13 @@ class Homepage extends React.Component {
             </form>
           </div>
         </div>
-        <Link to={'/listings'}><h4>Explore Listings</h4></Link>
-
+        <h4>Explore Steambnb</h4>
+        <Link to={`/listings`}>
+          <div className="listings-button">
+            <img src="https://i.pinimg.com/originals/39/2f/bc/392fbca43c9f32ddf836903f0dbde545.jpg" />
+            <h6>Listings</h6>
+          </div>
+        </Link>
       </div>
     );
   }

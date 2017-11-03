@@ -97,3 +97,28 @@
     background-color: #FF5A5F;
   }
 }
+
+.listings-button {
+  display: flex;
+  justify-content: space-between;
+  height: 90px;
+  border: 1px solid #d9d9d9;
+  width: 260px;
+  cursor: pointer;
+
+  img {
+    width: 90px;
+    height: 90px;
+  }
+  h6 {
+    width: 170px;
+    border: none;
+    margin-top: 30px;
+    margin-left: 20px;
+    font-weight: 400;
+    font-size: 24px;
+    letter-spacing: 1px;
+    color: #404040;
+  }
+
+}
