@@ -13,7 +13,7 @@ class Api::ListingsController < ApplicationController
       listings.each do |listing|
         overlap = false
         listing.bookings.each do |booking|
-          if !(params[:start_date] > booking.end_date.to_s || params[:start_date] > booking.end_date.to_s)
+          if !(params[:start_date] > booking.end_date.to_s || params[:end_date] < booking.start_date.to_s)
             overlap = true
           end
         end
