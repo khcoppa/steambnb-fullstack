@@ -8,6 +8,7 @@ class SignupForm extends Component {
       password: ''
     };
     this.handleSubmit = this.handleSubmit.bind(this);
+    this.demoLogin = this.demoLogin.bind(this);
   }
 
   renderErrors() {
@@ -20,9 +21,16 @@ class SignupForm extends Component {
     return e => this.setState({[field]: e.currentTarget.value});
   }
 
+  demoLogin(e) {
+    e.preventDefault();
+    const user = { username: 'Guest', password: 'password' };
+    this.props.login({user});
+  }
+
   handleSubmit(e) {
     e.preventDefault();
     const user = this.state;
+    debugger
     this.props.signup({user});
   }
 

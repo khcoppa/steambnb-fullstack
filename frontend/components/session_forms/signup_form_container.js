@@ -9,8 +9,10 @@ const mapStateToProps = (state) => {
 };
 
 const mapDispatchToProps = (dispatch) => {
+  debugger
   return {
     signup: user => dispatch(signup(user)),
+    login: user => dispatch(login(user))
   }
 };
 
