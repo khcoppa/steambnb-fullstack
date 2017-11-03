@@ -24,22 +24,25 @@ class ReviewForm extends React.Component {
     this.props.history.push(url);
   }
 
-   update(field) {
-     return e => this.setState({[field]: e.currentTarget.value});
-   }
-   handleSubmit(e) {
-     e.preventDefault();
-     let review = this.state;
-     review.rating = parseInt(review.rating);
-     this.props.createReview(review);
-     this.navigateToListingShow();
-   }
+  update(field) {
+    return e => this.setState({[field]: e.currentTarget.value});
+    debugger
+  }
+  handleSubmit(e) {
+    e.preventDefault();
+    let review = this.state;
+    review.rating = parseInt(review.rating);
+
+    this.props.createReview(review);
+    this.navigateToListingShow();
+  }
    //star review form was learned from A Pen by Neil Pomerleau
     //https://codepen.io/neilpomerleau/pen/wzxzQr
   render() {
     if (this.props.listing) {
       return(
         <div className="review-form">
+          <h1>Review for {this.props.listing.title}</h1>
           <div className="listing-div">
             <img src={this.props.listing.image_url} />
             <h4>Sauna {this.props.listing.beds} beds</h4>
@@ -49,82 +52,27 @@ class ReviewForm extends React.Component {
 
           <form onSubmit={this.handleSubmit}>
             <div className="rating">
-              <h2>How was your stay at {this.props.listing.title}?</h2>
-              <div className="stars">
-                <label>
-                  <input
-                    type="radio"
-                    name="stars"
-                    value="1"
-                    onChange={this.update('rating')}
-                  />
-                  <span className="icon">★</span>
-                </label>
-
-                <label>
-                  <input
-                    type="radio"
-                    name="stars"
-                    value="2"
-                    onChange={this.update('rating')}
-                  />
-                  <span className="icon">★</span>
-                  <span className="icon">★</span>
-                </label>
-
-                <label>
-                  <input
-                    type="radio"
-                    name="stars"
-                    value="3"
-                    onChange={this.update('rating')}
-                  />
-                  <span className="icon">★</span>
-                  <span className="icon">★</span>
-                  <span className="icon">★</span>
-                </label>
-
-                <label>
-                  <input
-                    type="radio"
-                    name="stars"
-                    value="4"
-                    onChange={this.update('rating')}
-                  />
-                  <span className="icon">★</span>
-                  <span className="icon">★</span>
-                  <span className="icon">★</span>
-                  <span className="icon">★</span>
-                </label>
-
-                <label>
-                  <input
-                    type="radio"
-                    name="stars"
-                    value="5"
-                    onChange={this.update('rating')}
-                  />
-                  <span className="icon">★</span>
-                  <span className="icon">★</span>
-                  <span className="icon">★</span>
-                  <span className="icon">★</span>
-                  <span className="icon">★</span>
-                </label>
-              </div>
+              <h2>Rate your stay at {this.props.listing.title}</h2>
+              <input list="ratings" onChange={this.update('rating')}/>
+              <datalist id="ratings">
+                <option value="5">My stay was amazing!</option>
+                <option value="4">My stay was good!</option>
+                <option value="3">My stay was okay!</option>
+                <option value="2">My stay was bad!</option>
+                <option value="1">My stay was terrible!</option>
+              </datalist>
             </div>
 
-            <div className="body">
+            <div className="review-text">
               <h2>Write a public review</h2>
               <textarea
-                rows="15"
-                cols="45"
-                placeholder="Write a public review"
+                placeholder="Describe your experience..."
                 value={this.state.body}
                 onChange={this.update('body')}
               />
             </div>
 
-            <button id="review-button">Submit</button>
+            <button id="review-button">Review</button>
 
           </form>
         </div>

@@ -10,10 +10,10 @@ module.exports = {
   },
   content : {
     position        : 'absolute',
-    top             : '20%',
+    top             : '18%',
     left            : '30%',
     right           : '30%',
-    bottom          : '20%',
+    bottom          : '18%',
     border          : '1px solid #ccc',
     padding         : 0,
     zIndex          : 11
