@@ -53,7 +53,7 @@ User.create!(
 )
 
 Listing.create!(
-  id: 1,
+  id: 11,
   title: 'The Trailhead Spa',
   host_id: 1,
   image_url: 'https://media.cntraveler.com/photos/568d796e67dc82253d9f8c27/master/w_1440,c_limit/rca-spas-brush-creek-ranch-cr-courtesy.jpg',
@@ -67,7 +67,7 @@ Listing.create!(
   lng: -106.8064
 )
 Listing.create!(
-  id: 2,
+  id: 12,
   title: 'Sauna with a View',
   host_id: 1,
   image_url: 'https://www.bergkristall.de/media/49103/bergkristall-sep14-s9a3064-web-1481025.jpg',
@@ -81,7 +81,7 @@ Listing.create!(
   lng: -74.0060
 )
 Listing.create!(
-  id: 3,
+  id: 13,
   title: 'The Lodge at Woodloch',
   host_id: 1,
   image_url: 'https://media.cntraveler.com/photos/56902a9c97fabb663f34aaa7/master/w_1440,c_limit/rca-spas-lodge-at-woodloch-cr-courtesy.jpg',
@@ -95,7 +95,7 @@ Listing.create!(
   lng: -75.1821
 )
 Listing.create!(
-  id: 4,
+  id: 14,
   title: 'Spa Montage',
   host_id: 1,
   image_url: 'https://media.cntraveler.com/photos/568d918c67dc82253d9f8d6a/master/w_1440,c_limit/rca-spas-montage-beverly-hills-cr-courtesy.jpg',
@@ -109,7 +109,7 @@ Listing.create!(
   lng: -118.4004
 )
 Listing.create!(
-  id: 5,
+  id: 15,
   title: 'Agora Sauna',
   host_id: 1,
   image_url: 'https://i1.wp.com/www.salted.no/wp-content/uploads/2014/09/IMG_8487-Marte_Antonsen.jpg',
@@ -123,7 +123,7 @@ Listing.create!(
   lng: 14.137287
 )
 Listing.create!(
-  id: 6,
+  id: 16,
   title: 'Spa Finland',
   host_id: 1,
   image_url: 'https://cdn.theculturetrip.com/wp-content/uploads/2017/03/sauna-hermanni_1_014.jpg',
@@ -137,7 +137,7 @@ Listing.create!(
   lng: 24.934801
 )
 Listing.create!(
-  id: 7,
+  id: 17,
   title: 'Las Vegas Sauna',
   host_id: 1,
   image_url: 'https://cdn.theculturetrip.com/wp-content/uploads/2017/03/sauna-hermanni_1_014.jpg',
@@ -151,7 +151,7 @@ Listing.create!(
   lng: -115.1398
 )
 Listing.create!(
-  id: 8,
+  id: 18,
   title: 'Luxor Spa',
   host_id: 1,
   image_url: 'http://c767204.r4.cf2.rackcdn.com/b7e82d30-9b36-49fc-b068-9dc3b02635ff.jpg',
@@ -165,7 +165,7 @@ Listing.create!(
   lng: -118.4004
 )
 Listing.create!(
-  id: 9,
+  id: 19,
   title: 'Spacious Sauna',
   host_id: 1,
   image_url: 'https://i.pinimg.com/originals/61/1a/f4/611af4b49c9d4fe2132c050ab82f00f3.jpg',
@@ -179,7 +179,7 @@ Listing.create!(
   lng: -73.9615
 )
 Listing.create!(
-  id: 10,
+  id: 20,
   title: 'The Peninsula Spa',
   host_id: 1,
   image_url: 'https://media.cntraveler.com/photos/568e811a67dc82253d9f9351/master/w_1440,c_limit/rca-spas-peninsula-new-york-cr-courtesy.jpg',
@@ -194,7 +194,7 @@ Listing.create!(
 )
 
 Listing.create!(
-  id: 11,
+  id: 1,
   title: 'Beautiful Spa in the City',
   host_id: 1,
   image_url: 'https://www.elmshotelandspa.com/files/1256/client_0000841523Hdr1.jpg',
@@ -208,7 +208,7 @@ Listing.create!(
   lng: -106.8064
 )
 Listing.create!(
-  id: 12,
+  id: 2,
   title: 'Outdoor Relaxation Spa',
   host_id: 1,
   image_url: 'https://a0.muscache.com/im/pictures/23991343/89872a3f_original.jpg?aki_policy=xx_large',
@@ -222,7 +222,7 @@ Listing.create!(
   lng: -74.0060
 )
 Listing.create!(
-  id: 13,
+  id: 3,
   title: 'Bubbles',
   host_id: 1,
   image_url: 'https://ny.spacastleusa.com/wp-content/uploads/2015/09/DSC061841.jpg',
@@ -236,7 +236,7 @@ Listing.create!(
   lng: -75.1821
 )
 Listing.create!(
-  id: 14,
+  id: 4,
   title: 'Saints Spa',
   host_id: 1,
   image_url: 'https://08c05c250d7be93602d3-b33ef44eafa8af7dc753fc4ea00a959c.ssl.cf1.rackcdn.com/87/2/large.jpg',
@@ -250,7 +250,7 @@ Listing.create!(
   lng: -118.4004
 )
 Listing.create!(
-  id: 15,
+  id: 5,
   title: 'Grand Hotel and Spa',
   host_id: 1,
   image_url: 'http://www.grandhoteloceancity.com/wp-content/uploads/2016/12/Grand_Hotel-Exterior_Night.jpg',
@@ -264,7 +264,7 @@ Listing.create!(
   lng: 14.137287
 )
 Listing.create!(
-  id: 16,
+  id: 6,
   title: 'Small Town Spa',
   host_id: 1,
   image_url: 'http://2f74d26a73ae1ad7d267-34522a54f6514f2b04f5f718c48c669b.r7.cf1.rackcdn.com/responsive/1900/2f74d26a73ae1ad7d267-34522a54f6514f2b04f5f718c48c669b.r7.cf1.rackcdn.com/responsive/16:9/2f74d26a73ae1ad7d267-34522a54f6514f2b04f5f718c48c669b.r7.cf1.rackcdn.com/restaurants-irs/235238/wes3818sp-205597-Heavenly-Spa-Hot-Tub.jpg',
@@ -278,7 +278,7 @@ Listing.create!(
   lng: 24.934801
 )
 Listing.create!(
-  id: 17,
+  id: 7,
   title: 'Westgate Spa',
   host_id: 1,
   image_url: 'https://images.trvl-media.com/hotels/1000000/850000/849300/849229/849229_207_z.jpg',
@@ -292,7 +292,7 @@ Listing.create!(
   lng: -115.1398
 )
 Listing.create!(
-  id: 18,
+  id: 8,
   title: 'Rooftop Spa',
   host_id: 1,
   image_url: 'https://5thingstodotoday.files.wordpress.com/2016/01/dusk-on-the-rooftop-pool.jpg',
@@ -306,7 +306,7 @@ Listing.create!(
   lng: -118.4004
 )
 Listing.create!(
-  id: 19,
+  id: 9,
   title: 'Winter Wonderland',
   host_id: 1,
   image_url: 'https://webmedia.westgateresorts.com/prometheus/getImage?id=34871',
@@ -320,7 +320,7 @@ Listing.create!(
   lng: -73.9615
 )
 Listing.create!(
-  id: 20,
+  id: 10,
   title: 'Lights Spa',
   host_id: 1,
   image_url: 'https://www.travelforsenses.com/wp-content/uploads/2016/07/las-vegas-spa-hammam-1-850x500.jpg',
