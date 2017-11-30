@@ -1,8 +1,12 @@
 .home-content {
   margin: 0 auto;
   display: block;
-  width: 75%;
-  margin-top: 175px;
+  width: 80%;
+  margin-top: 210px;
+}
+
+.text-search {
+  margin: 0 8%;
 }
 
 .home-content h1 {
@@ -96,6 +100,14 @@
     letter-spacing: 1px;
     background-color: #FF5A5F;
   }
+}
+
+h5 {
+  font-family: 'Poppins', sans-serif;
+  color: #505050;
+  font-size: 24px;
+  text-decoration: none;
+  margin: 100px 0 10px 0;
 }
 
 .listings-button {
