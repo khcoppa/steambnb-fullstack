@@ -192,6 +192,148 @@ Listing.create!(
   lat: 37.7749,
   lng: -122.4194
 )
+
+Listing.create!(
+  id: 11,
+  title: 'Beautiful Spa in the City',
+  host_id: 1,
+  image_url: 'https://www.elmshotelandspa.com/files/1256/client_0000841523Hdr1.jpg',
+  price: 100,
+  location: 'Chicago, Illinois',
+  guests: 1,
+  bedrooms: 1,
+  beds: 1,
+  bath: 1,
+  lat: 41.4550,
+  lng: -106.8064
+)
+Listing.create!(
+  id: 12,
+  title: 'Outdoor Relaxation Spa',
+  host_id: 1,
+  image_url: 'https://a0.muscache.com/im/pictures/23991343/89872a3f_original.jpg?aki_policy=xx_large',
+  price: 200,
+  location: 'Atlantic City, New Jersey',
+  guests: 2,
+  bedrooms: 2,
+  beds: 2,
+  bath: 2,
+  lat: 40.7128,
+  lng: -74.0060
+)
+Listing.create!(
+  id: 13,
+  title: 'Bubbles',
+  host_id: 1,
+  image_url: 'https://ny.spacastleusa.com/wp-content/uploads/2015/09/DSC061841.jpg',
+  price: 300,
+  location: 'Austin, Texas',
+  guests: 3,
+  bedrooms: 3,
+  beds: 3,
+  bath: 3,
+  lat: 41.4759,
+  lng: -75.1821
+)
+Listing.create!(
+  id: 14,
+  title: 'Saints Spa',
+  host_id: 1,
+  image_url: 'https://08c05c250d7be93602d3-b33ef44eafa8af7dc753fc4ea00a959c.ssl.cf1.rackcdn.com/87/2/large.jpg',
+  price: 400,
+  location: 'New Orleans, Louisiana',
+  guests: 4,
+  bedrooms: 4,
+  beds: 4,
+  bath: 4,
+  lat: 34.0736,
+  lng: -118.4004
+)
+Listing.create!(
+  id: 15,
+  title: 'Grand Hotel and Spa',
+  host_id: 1,
+  image_url: 'http://www.grandhoteloceancity.com/wp-content/uploads/2016/12/Grand_Hotel-Exterior_Night.jpg',
+  price: 400,
+  location: 'Orlando, Florida',
+  guests: 4,
+  bedrooms: 4,
+  beds: 4,
+  bath: 4,
+  lat: 67.073557,
+  lng: 14.137287
+)
+Listing.create!(
+  id: 16,
+  title: 'Small Town Spa',
+  host_id: 1,
+  image_url: 'http://2f74d26a73ae1ad7d267-34522a54f6514f2b04f5f718c48c669b.r7.cf1.rackcdn.com/responsive/1900/2f74d26a73ae1ad7d267-34522a54f6514f2b04f5f718c48c669b.r7.cf1.rackcdn.com/responsive/16:9/2f74d26a73ae1ad7d267-34522a54f6514f2b04f5f718c48c669b.r7.cf1.rackcdn.com/restaurants-irs/235238/wes3818sp-205597-Heavenly-Spa-Hot-Tub.jpg',
+  price: 400,
+  location: 'Scottsdale, Arizona',
+  guests: 4,
+  bedrooms: 4,
+  beds: 4,
+  bath: 4,
+  lat: 60.168542,
+  lng: 24.934801
+)
+Listing.create!(
+  id: 17,
+  title: 'Westgate Spa',
+  host_id: 1,
+  image_url: 'https://images.trvl-media.com/hotels/1000000/850000/849300/849229/849229_207_z.jpg',
+  price: 400,
+  location: 'Detroit, Michigan',
+  guests: 4,
+  bedrooms: 4,
+  beds: 4,
+  bath: 4,
+  lat: 36.1699,
+  lng: -115.1398
+)
+Listing.create!(
+  id: 18,
+  title: 'Rooftop Spa',
+  host_id: 1,
+  image_url: 'https://5thingstodotoday.files.wordpress.com/2016/01/dusk-on-the-rooftop-pool.jpg',
+  price: 400,
+  location: 'Nashville, Tennessee',
+  guests: 4,
+  bedrooms: 4,
+  beds: 4,
+  bath: 4,
+  lat: 34.0737,
+  lng: -118.4004
+)
+Listing.create!(
+  id: 19,
+  title: 'Winter Wonderland',
+  host_id: 1,
+  image_url: 'https://webmedia.westgateresorts.com/prometheus/getImage?id=34871',
+  price: 400,
+  location: 'Portland, Maine',
+  guests: 4,
+  bedrooms: 4,
+  beds: 4,
+  bath: 4,
+  lat: 40.9732,
+  lng: -73.9615
+)
+Listing.create!(
+  id: 20,
+  title: 'Lights Spa',
+  host_id: 1,
+  image_url: 'https://www.travelforsenses.com/wp-content/uploads/2016/07/las-vegas-spa-hammam-1-850x500.jpg',
+  price: 400,
+  location: 'Raliegh, North Carolina',
+  guests: 4,
+  bedrooms: 4,
+  beds: 4,
+  bath: 4,
+  lat: 37.7749,
+  lng: -122.4194
+)
+
 # -- 1
 Review.create!(
   body: 'The place was as amazing as it seemed. The drive up was beautiful. As you walk into the gate the smell was intoxicating, and the place has so much charm.',
@@ -202,8 +344,8 @@ Review.create!(
 Booking.create!(
   booker_id: 4,
   listing_id: 1,
-  start_date: "2017-11-05",
-  end_date: "2017-11-06"
+  start_date: "2017-11-20",
+  end_date: "2017-11-30"
 )
 Review.create!(
   body: 'The place was very nice. The drive up was beautiful. The place has so much charm.',
@@ -214,8 +356,8 @@ Review.create!(
 Booking.create!(
   booker_id: 5,
   listing_id: 1,
-  start_date: "2017-11-07",
-  end_date: "2017-11-08"
+  start_date: "2017-12-01",
+  end_date: "2017-12-03"
 )
 # -- 2
 Review.create!(
@@ -227,8 +369,8 @@ Review.create!(
 Booking.create!(
   booker_id: 3,
   listing_id: 2,
-  start_date: "2017-11-05",
-  end_date: "2017-11-06"
+  start_date: "2017-11-27",
+  end_date: "2017-12-06"
 )
 Review.create!(
   body: 'The place was as amazing as it seemed. The drive up was beautiful. As you walk into the gate the smell was intoxicating, and the place has so much charm.',
@@ -239,8 +381,8 @@ Review.create!(
 Booking.create!(
   booker_id: 2,
   listing_id: 2,
-  start_date: "2017-11-07",
-  end_date: "2017-11-08"
+  start_date: "2017-12-07",
+  end_date: "2017-12-08"
 )
 # -- 3
 Review.create!(
@@ -252,8 +394,8 @@ Review.create!(
 Booking.create!(
   booker_id: 5,
   listing_id: 3,
-  start_date: "2017-11-05",
-  end_date: "2017-11-06"
+  start_date: "2017-11-22",
+  end_date: "2017-11-26"
 )
 Review.create!(
   body: 'The place was as amazing as it seemed. The drive up was beautiful. As you walk into the gate the smell was intoxicating, and the place has so much charm.',
@@ -264,8 +406,8 @@ Review.create!(
 Booking.create!(
   booker_id: 6,
   listing_id: 3,
-  start_date: "2017-11-07",
-  end_date: "2017-11-08"
+  start_date: "2017-11-18",
+  end_date: "2017-11-21"
 )
 # -- 4
 Review.create!(
@@ -277,8 +419,8 @@ Review.create!(
 Booking.create!(
   booker_id: 5,
   listing_id: 4,
-  start_date: "2017-11-05",
-  end_date: "2017-11-06"
+  start_date: "2017-12-03",
+  end_date: "2017-12-06"
 )
 Review.create!(
   body: 'The place was as amazing as it seemed. The drive up was beautiful. As you walk into the gate the smell was intoxicating, and the place has so much charm.',
@@ -289,8 +431,8 @@ Review.create!(
 Booking.create!(
   booker_id: 7,
   listing_id: 4,
-  start_date: "2017-11-07",
-  end_date: "2017-11-08"
+  start_date: "2017-11-10",
+  end_date: "2017-11-12"
 )
 # -- 5
 Review.create!(
@@ -302,8 +444,8 @@ Review.create!(
 Booking.create!(
   booker_id: 2,
   listing_id: 5,
-  start_date: "2017-11-05",
-  end_date: "2017-11-06"
+  start_date: "2017-12-03",
+  end_date: "2017-12-04"
 )
 Review.create!(
   body: 'The place was as amazing as it seemed. The drive up was beautiful. As you walk into the gate the smell was intoxicating, and the place has so much charm.',
@@ -314,8 +456,8 @@ Review.create!(
 Booking.create!(
   booker_id: 3,
   listing_id: 5,
-  start_date: "2017-11-07",
-  end_date: "2017-11-08"
+  start_date: "2017-12-05",
+  end_date: "2017-12-06"
 )
 # -- 6
 Review.create!(
@@ -327,8 +469,8 @@ Review.create!(
 Booking.create!(
   booker_id: 1,
   listing_id: 6,
-  start_date: "2017-11-05",
-  end_date: "2017-11-06"
+  start_date: "2017-12-01",
+  end_date: "2017-12-03"
 )
 Review.create!(
   body: 'The place was as amazing as it seemed. The drive up was beautiful. As you walk into the gate the smell was intoxicating, and the place has so much charm.',
@@ -339,8 +481,8 @@ Review.create!(
 Booking.create!(
   booker_id: 6,
   listing_id: 6,
-  start_date: "2017-11-07",
-  end_date: "2017-11-08"
+  start_date: "2017-12-07",
+  end_date: "2017-12-08"
 )
 # -- 7
 Review.create!(
@@ -352,8 +494,8 @@ Review.create!(
 Booking.create!(
   booker_id: 1,
   listing_id: 7,
-  start_date: "2017-11-05",
-  end_date: "2017-11-06"
+  start_date: "2017-12-03",
+  end_date: "2017-12-06"
 )
 Review.create!(
   body: 'The place was as amazing as it seemed. The drive up was beautiful. As you walk into the gate the smell was intoxicating, and the place has so much charm.',
@@ -364,8 +506,8 @@ Review.create!(
 Booking.create!(
   booker_id: 3,
   listing_id: 7,
-  start_date: "2017-11-07",
-  end_date: "2017-11-08"
+  start_date: "2017-12-01",
+  end_date: "2017-12-02"
 )
 # -- 8
 Review.create!(
@@ -377,8 +519,8 @@ Review.create!(
 Booking.create!(
   booker_id: 1,
   listing_id: 8,
-  start_date: "2017-11-05",
-  end_date: "2017-11-06"
+  start_date: "2017-11-28",
+  end_date: "2017-11-29"
 )
 Review.create!(
   body: 'The place was as amazing as it seemed. The drive up was beautiful. As you walk into the gate the smell was intoxicating, and the place has so much charm.',
@@ -389,6 +531,6 @@ Review.create!(
 Booking.create!(
   booker_id: 2,
   listing_id: 8,
-  start_date: "2017-11-07",
-  end_date: "2017-11-08"
+  start_date: "2017-12-07",
+  end_date: "2017-12-08"
 )
