@@ -6,6 +6,7 @@ class Api::ListingsController < ApplicationController
     listings = bounds ? Listing.in_bounds(bounds) : Listing.all
 
     # Available Date search
+      # params[:start_date].present? 
     if (params[:start_date] != "" && params[:start_date] != nil) && (params[:end_date] != "" && params[:start_date] != nil)
       # check for overlap on the listing's booking's dates
       # listings = Listings.includes(:booking).where("params[:start_date] > booking.end_date OR booking.start_date > params[:end_date]").all
